@@ -8,7 +8,7 @@ from langchain_core.messages import SystemMessage, HumanMessage
 import json
 
 model = ChatOllama(model="gemma3:12b")
-answer_model = ChatOllama(model= "gemma2:9b")
+answer_model = ChatOllama(model= "gemma3n:e4b")
 
 from langchain_core.prompts import ChatPromptTemplate
 from fine_vector import retriever
