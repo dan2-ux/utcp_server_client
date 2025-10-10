@@ -1,0 +1,920 @@
+path,type,value_define,prefer_name
+Vehicle.ADAS.ABS.IsEnabled,actuator,boolean, abs enabled
+Vehicle.ADAS.ABS.IsEngaged,sensor,boolean, abs engaged
+Vehicle.ADAS.ABS.IsError,sensor,boolean, abs error
+Vehicle.ADAS.ActiveAutonomyLevel,sensor,string, adas active autonomy level
+Vehicle.ADAS.CruiseControl.IsActive,actuator,boolean, adas cruise control
+Vehicle.ADAS.CruiseControl.IsEnabled,actuator,boolean, adas cruise control
+Vehicle.ADAS.CruiseControl.IsError,sensor,boolean, adas cruise control
+Vehicle.ADAS.CruiseControl.SpeedSet,actuator,float, adas cruise control speed set
+Vehicle.ADAS.DMS.IsEnabled,actuator,boolean, adas dms enabled
+Vehicle.ADAS.DMS.IsError,sensor,boolean, adas dms error 
+Vehicle.ADAS.DMS.IsWarning,sensor,boolean, adas dms warning 
+Vehicle.ADAS.EBA.IsEnabled,actuator,boolean, adas eba enabled 
+Vehicle.ADAS.EBA.IsEngaged,sensor,boolean, adas eba engaged
+Vehicle.ADAS.EBA.IsError,sensor,boolean, adas eba error 
+Vehicle.ADAS.EBD.IsEnabled,actuator,boolean, adas ebd enabled 
+Vehicle.ADAS.EBD.IsEngaged,sensor,boolean, adas ebd engaged
+Vehicle.ADAS.EBD.IsError,sensor,boolean, adas ebd error 
+Vehicle.ADAS.ESC.IsEnabled,actuator,boolean, adas esc engaged
+Vehicle.ADAS.ESC.IsEngaged,sensor,boolean, adas esc engaged
+Vehicle.ADAS.ESC.IsError,sensor,boolean, adas esc error
+Vehicle.ADAS.ESC.IsStrongCrossWindDetected,sensor,boolean, adas esc trong corss wind detected 
+Vehicle.ADAS.ESC.RoadFriction.LowerBound,sensor,float, adas esc road frictin lower bound 
+Vehicle.ADAS.ESC.RoadFriction.MostProbable,sensor,float, adas esc road friction most probable 
+Vehicle.ADAS.ESC.RoadFriction.UpperBound,sensor,float, adas esc road friction upper bound 
+Vehicle.ADAS.LaneDepartureDetection.IsEnabled,actuator,boolean, adas lane departure detection 
+Vehicle.ADAS.LaneDepartureDetection.IsError,sensor,boolean, adas lane departure detection 
+Vehicle.ADAS.LaneDepartureDetection.IsWarning,sensor,boolean, adas lane departure detection 
+Vehicle.ADAS.ObstacleDetection.IsEnabled,actuator,boolean, adas obstacle detection 
+Vehicle.ADAS.ObstacleDetection.IsError,sensor,boolean, adas obstacle detection 
+Vehicle.ADAS.ObstacleDetection.IsWarning,sensor,boolean, adas obstacle detection 
+Vehicle.ADAS.PowerOptimizeLevel,actuator,uint8, adas power optimizer 
+Vehicle.ADAS.SupportedAutonomyLevel,attribute,string, adas supoorted autonomy level
+Vehicle.ADAS.TCS.IsEnabled,actuator,boolean, adas tcs enabled
+Vehicle.ADAS.TCS.IsEngaged,sensor,boolean, adas tcs engaged
+Vehicle.ADAS.TCS.IsError,sensor,boolean, adas tcs error
+Vehicle.Acceleration.Lateral,sensor,float, accesleration lateral 
+Vehicle.Acceleration.Longitudinal,sensor,float, accesleration Longitude
+Vehicle.Acceleration.Vertical,sensor,float, acceleration Vertical
+Vehicle.AngularVelocity.Pitch,sensor,float, angular velocity
+Vehicle.AngularVelocity.Roll,sensor,float, angular velocity
+Vehicle.AngularVelocity.Yaw,sensor,float, angular velocity
+Vehicle.AverageSpeed,sensor,float, average Speed
+Vehicle.Body.BodyType,attribute,string, body type
+Vehicle.Body.Hood.IsOpen,actuator,boolean, Hood
+Vehicle.Body.Horn.IsActive,actuator,boolean, Horn
+Vehicle.Body.Lights.Backup.IsDefect,sensor,boolean, backup Lights
+Vehicle.Body.Lights.Backup.IsOn,actuator,boolean, backup lights 
+Vehicle.Body.Lights.Beam.High.IsDefect,sensor,boolean, high beam defect 
+Vehicle.Body.Lights.Beam.High.IsOn,actuator,boolean, high beam lights
+Vehicle.Body.Lights.Beam.Low.IsDefect,sensor,boolean, low beam defect 
+Vehicle.Body.Lights.Beam.Low.IsOn,actuator,boolean, low beam lights
+Vehicle.Body.Lights.Brake.IsActive,actuator,string, brake lights active
+Vehicle.Body.Lights.Brake.IsDefect,sensor,boolean, brake light defect 
+Vehicle.Body.Lights.DirectionIndicator.Left.IsDefect,sensor,boolean, left indicator defect
+Vehicle.Body.Lights.DirectionIndicator.Left.IsSignaling,actuator,boolean, left indicator 
+Vehicle.Body.Lights.DirectionIndicator.Right.IsDefect,sensor,boolean, right indicator defect
+Vehicle.Body.Lights.DirectionIndicator.Right.IsSignaling,actuator,boolean, right indicator 
+Vehicle.Body.Lights.Fog.Front.IsDefect,sensor,boolean. Fog front light defect
+Vehicle.Body.Lights.Fog.Front.IsOn,actuator,boolean, fog front Lights
+Vehicle.Body.Lights.Fog.Rear.IsDefect,sensor,boolean, Fog rear light defect 
+Vehicle.Body.Lights.Fog.Rear.IsOn,actuator,boolean, fog rear light 
+Vehicle.Body.Lights.IsBrakeOn,actuator,boolean, brake lights 
+Vehicle.Body.Lights.Hazard.IsDefect,sensor,boolean, Hazard defect 
+Vehicle.Body.Lights.Hazard.IsSignaling,actuator,boolean, hazard lights
+Vehicle.Body.Lights.IsHighBeamSwitchOn,actuator,boolean, high beam Switch 
+Vehicle.Body.Lights.LicensePlate.IsDefect,sensor,boolean, license plate light defect
+Vehicle.Body.Lights.LicensePlate.IsOn,actuator,boolean, license plate lights 
+Vehicle.Body.Lights.LightSwitch,actuator,string, light Switch
+Vehicle.Body.Lights.Parking.IsDefect,sensor,boolean, parking light defect
+Vehicle.Body.Lights.Parking.IsOn,actuator,boolean, parking lights
+Vehicle.Body.Lights.Running.IsDefect,sensor,boolean, running lights defect
+Vehicle.Body.Lights.Running.IsOn,actuator,boolean, running lights 
+Vehicle.Body.Mirrors.DriverSide.IsHeatingOn,actuator,boolean, driver Mirrors
+Vehicle.Body.Mirrors.DriverSide.Pan,actuator,int8, driver Mirrors
+Vehicle.Body.Mirrors.DriverSide.Tilt,actuator,int8, driver Mirrors
+Vehicle.Body.Mirrors.PassengerSide.IsHeatingOn,actuator,boolean, passenger Mirrors heating 
+Vehicle.Body.Mirrors.PassengerSide.Pan,actuator,int8, passenger Mirrors pan 
+Vehicle.Body.Mirrors.PassengerSide.Tilt,actuator,int8, passenger Mirrors tile 
+Vehicle.Body.PowerOptimizeLevel,actuator,uint8, optimize power level
+Vehicle.Body.Raindetection.Intensity,sensor,uint8, rain detection
+Vehicle.Body.RearMainSpoilerPosition,actuator,float, rear main spoiler Position
+Vehicle.Body.RefuelPosition,attribute,string, refuel Position
+Vehicle.Body.Trunk.Front.IsLightOn,actuator,boolean, trunk front light on 
+Vehicle.Body.Trunk.Front.IsLocked,actuator,boolean, trunk front locked 
+Vehicle.Body.Trunk.Front.IsOpen,actuator,boolean, trunk front open 
+Vehicle.Body.Trunk.Rear.IsLightOn,actuator,boolean, trunk rear light on 
+Vehicle.Body.Trunk.Rear.IsLocked,actuator,boolean, trunk rear locked 
+Vehicle.Body.Trunk.Rear.IsOpen,actuator,boolean, trunk rear open
+Vehicle.Body.Windshield.Front.IsHeatingOn,actuator,boolean, Windshield front 
+Vehicle.Body.Windshield.Front.WasherFluid.IsLevelLow,sensor,boolean, Windshield front low level
+Vehicle.Body.Windshield.Front.WasherFluid.Level,sensor,uint8, Windshield front level
+Vehicle.Body.Windshield.Front.Wiping.Intensity,actuator,uint8, Windshield front Wiping
+Vehicle.Body.Windshield.Front.Wiping.IsWipersWorn,sensor,boolean, Windshield front Wiping
+Vehicle.Body.Windshield.Front.Wiping.Mode,actuator,string, Windshield front Wiping
+Vehicle.Body.Windshield.Front.Wiping.System.ActualPosition,actuator,float, Windshield front Wiping System actual position
+Vehicle.Body.Windshield.Front.Wiping.System.DriveCurrent,sensor,float, Windshield front Wiping System driver current 
+Vehicle.Body.Windshield.Front.Wiping.System.Frequency,actuator,uint8, Windshield front Wiping System Frequency
+Vehicle.Body.Windshield.Front.Wiping.System.IsBlocked,sensor,boolean, Windshield front Wiping System blocked
+Vehicle.Body.Windshield.Front.Wiping.System.IsEndingWipeCycle,sensor,boolean, Windshield front Wiping System ending wipe cycle 
+Vehicle.Body.Windshield.Front.Wiping.System.IsOverheated,sensor,boolean, Windshield front Wiping System overheated
+Vehicle.Body.Windshield.Front.Wiping.System.IsPositionReached,sensor,boolean, Windshield front Wiping System position reached 
+Vehicle.Body.Windshield.Front.Wiping.System.IsWiperError,sensor,boolean, Windshield front Wiping System wipe error
+Vehicle.Body.Windshield.Front.Wiping.System.IsWiping,sensor,boolean, Windshield front Wiping System wiping
+Vehicle.Body.Windshield.Front.Wiping.System.Mode,actuator,string, Windshield front Wiping System mode
+Vehicle.Body.Windshield.Front.Wiping.System.TargetPosition,actuator,float, Windshield front Wiping System target position 
+Vehicle.Body.Windshield.Front.Wiping.WiperWear,sensor,uint8, Windshield front Wiping 
+Vehicle.Body.Windshield.Rear.IsHeatingOn,actuator,boolean, Windshield rear heating 
+Vehicle.Body.Windshield.Rear.WasherFluid.IsLevelLow,sensor,boolean, Windshield rear washer fluid low  
+Vehicle.Body.Windshield.Rear.WasherFluid.Level,sensor,uint8, Windshield rear washer fluid 
+Vehicle.Body.Windshield.Rear.Wiping.Intensity,actuator,uint8, Windshield rear Wiping intensity 
+Vehicle.Body.Windshield.Rear.Wiping.IsWipersWorn,sensor,boolean, Windshield rear Wiping wiper worn
+Vehicle.Body.Windshield.Rear.Wiping.Mode,actuator,string, Windshield rear Wiping mode 
+Vehicle.Body.Windshield.Rear.Wiping.System.ActualPosition,actuator,float, Windshield rear wiping System actual position
+Vehicle.Body.Windshield.Rear.Wiping.System.DriveCurrent,sensor,float, Windshield rear wiping System drive current
+Vehicle.Body.Windshield.Rear.Wiping.System.Frequency,actuator,uint8, Windshield rear wiping System Frequency
+Vehicle.Body.Windshield.Rear.Wiping.System.IsBlocked,sensor,boolean, Windshield rear wiping System blocked 
+Vehicle.Body.Windshield.Rear.Wiping.System.IsEndingWipeCycle,sensor,boolean, Windshield rear wiping System ending wipe cycle 
+Vehicle.Body.Windshield.Rear.Wiping.System.IsOverheated,sensor,boolean, Windshield rear wiping System overheated
+Vehicle.Body.Windshield.Rear.Wiping.System.IsPositionReached,sensor,boolean, Windshield rear wiping System position reached 
+Vehicle.Body.Windshield.Rear.Wiping.System.IsWiperError,sensor,boolean, Windshield rear wiping System wipe error 
+Vehicle.Body.Windshield.Rear.Wiping.System.IsWiping,sensor,boolean, Windshield rear wiping System wiping 
+Vehicle.Body.Windshield.Rear.Wiping.System.Mode,actuator,string, Windshield rear wiping System mode 
+Vehicle.Body.Windshield.Rear.Wiping.System.TargetPosition,actuator,float, Windshield rear wiping System target position 
+Vehicle.Body.Windshield.Rear.Wiping.WiperWear,sensor,uint8, Windshield rear wiping 
+Vehicle.Cabin.Convertible.Status,sensor,string, cabin convertible status
+Vehicle.Cabin.Door.Row1.DriverSide.IsChildLockActive,sensor,boolean, cabin row 1 driver side child lock active
+Vehicle.Cabin.Door.Row1.DriverSide.IsLocked,actuator,boolean, cabin row 1 driver side locked
+Vehicle.Cabin.Door.Row1.DriverSide.IsOpen,actuator,boolean, cabin row 1 driver side open 
+Vehicle.Cabin.Door.Row1.DriverSide.Shade.Position,actuator,uint8, cabin row 1 driver side shade position 
+Vehicle.Cabin.Door.Row1.DriverSide.Shade.Switch,actuator,string, cabin row 1 driver side shade switch 
+Vehicle.Cabin.Door.Row1.DriverSide.Window.IsOpen,sensor,boolean, cabin row 1 driver side  Window open
+Vehicle.Cabin.Door.Row1.DriverSide.Window.Position,actuator,uint8, cabin row 1 driver side Window position 
+Vehicle.Cabin.Door.Row1.DriverSide.Window.Switch,actuator,string, cabin row 1 driver side Window switch 
+Vehicle.Cabin.Door.Row1.PassengerSide.IsChildLockActive,sensor,boolean, cabin row 1 passenger side child lock active 
+Vehicle.Cabin.Door.Row1.PassengerSide.IsLocked,actuator,boolean, cabin row 1 passenger side locked 
+Vehicle.Cabin.Door.Row1.PassengerSide.IsOpen,actuator,boolean, cabin row 1 passenger side open 
+Vehicle.Cabin.Door.Row1.PassengerSide.Shade.Position,actuator,uint8, cabin row 1 passenger side  shade
+Vehicle.Cabin.Door.Row1.PassengerSide.Shade.Switch,actuator,string, cabin row 1 passenger side shade
+Vehicle.Cabin.Door.Row1.PassengerSide.Window.IsOpen,sensor,boolean, cabin row 1 passenger side  Window open 
+Vehicle.Cabin.Door.Row1.PassengerSide.Window.Position,actuator,uint8, cabin row 1 passenger side  Window position 
+Vehicle.Cabin.Door.Row1.PassengerSide.Window.Switch,actuator,string, cabin row 1 passenger side  Window switch 
+Vehicle.Cabin.Door.Row2.DriverSide.IsChildLockActive,sensor,boolean, cabin row 2 driver side child lock active 
+Vehicle.Cabin.Door.Row2.DriverSide.IsLocked,actuator,boolean, cabin row 2 driver side locked 
+Vehicle.Cabin.Door.Row2.DriverSide.IsOpen,actuator,boolean, cabin row 2 driver side open 
+Vehicle.Cabin.Door.Row2.DriverSide.Shade.Position,actuator,uint8, cabin row 2 driver side shade position  
+Vehicle.Cabin.Door.Row2.DriverSide.Shade.Switch,actuator,string, cabin row 2 driver side  shade switch 
+Vehicle.Cabin.Door.Row2.DriverSide.Window.IsOpen,sensor,boolean, cabin row 2 driver side Window open 
+Vehicle.Cabin.Door.Row2.DriverSide.Window.Position,actuator,uint8, cabin row 2 driver side Window position 
+Vehicle.Cabin.Door.Row2.DriverSide.Window.Switch,actuator,string, cabin row 2 driver side Window switch 
+Vehicle.Cabin.Door.Row2.PassengerSide.IsChildLockActive,sensor,boolean, cabin row 2 passenger side child lock active 
+Vehicle.Cabin.Door.Row2.PassengerSide.IsLocked,actuator,boolean, cabin row 2 passenger side locked 
+Vehicle.Cabin.Door.Row2.PassengerSide.IsOpen,actuator,boolean, cabin row 2 passenger side  open 
+Vehicle.Cabin.Door.Row2.PassengerSide.Shade.Position,actuator,uint8, cabin row 2 passenger side shade position 
+Vehicle.Cabin.Door.Row2.PassengerSide.Shade.Switch,actuator,string, cabin row 2 passenger side shade switch 
+Vehicle.Cabin.Door.Row2.PassengerSide.Window.IsOpen,sensor,boolean, cabin row 2 passenger side Window open 
+Vehicle.Cabin.Door.Row2.PassengerSide.Window.Position,actuator,uint8, cabin row 2 passenger side Window position 
+Vehicle.Cabin.Door.Row2.PassengerSide.Window.Switch,actuator,string, cabin row 2 passenger side Window switch 
+Vehicle.Cabin.DoorCount,attribute,uint8, door count 
+Vehicle.Cabin.DriverPosition,attribute,string, driver Position
+Vehicle.Cabin.HVAC.AmbientAirTemperature,sensor,float, ambient air temperature 
+Vehicle.Cabin.HVAC.IsAirConditioningActive,actuator,boolean, air conditioning status
+Vehicle.Cabin.HVAC.IsFrontDefrosterActive,actuator,boolean, front defroster status
+Vehicle.Cabin.HVAC.IsRearDefrosterActive,actuator,boolean, rear defroster status
+Vehicle.Cabin.HVAC.IsRecirculationActive,actuator,boolean, recirculation status 
+Vehicle.Cabin.HVAC.PowerOptimizeLevel,actuator,uint8, hvac power optimize 
+Vehicle.Cabin.HVAC.Station.Row1.Driver.AirDistribution,actuator,string, driver air distribution  
+Vehicle.Cabin.HVAC.Station.Row1.Driver.FanSpeed,actuator,uint8, driver fan speed 
+Vehicle.Cabin.HVAC.Station.Row1.Driver.Temperature,actuator,int8, driver temperature 
+Vehicle.Cabin.HVAC.Station.Row1.Passenger.AirDistribution,actuator,string, passenger air distribution  
+Vehicle.Cabin.HVAC.Station.Row1.Passenger.FanSpeed,actuator,uint8, passenger fan speed
+Vehicle.Cabin.HVAC.Station.Row1.Passenger.Temperature,actuator,int8, passenger temperature
+Vehicle.Cabin.HVAC.Station.Row2.Driver.AirDistribution,actuator,string, row 2 driver air distribution
+Vehicle.Cabin.HVAC.Station.Row2.Driver.FanSpeed,actuator,uint8, row 2 driver fan speed
+Vehicle.Cabin.HVAC.Station.Row2.Driver.Temperature,actuator,int8, row 2 driver temperature
+Vehicle.Cabin.HVAC.Station.Row2.Passenger.AirDistribution,actuator,string, row 2 passenger air distribution
+Vehicle.Cabin.HVAC.Station.Row2.Passenger.FanSpeed,actuator,uint8, row 2 passenger fan speed
+Vehicle.Cabin.HVAC.Station.Row2.Passenger.Temperature,actuator,int8, row 2 passenger temperature
+Vehicle.Cabin.HVAC.Station.Row3.Driver.AirDistribution,actuator,string, row 3 driver air distribution
+Vehicle.Cabin.HVAC.Station.Row3.Driver.FanSpeed,actuator,uint8, row 3 driver fan speed
+Vehicle.Cabin.HVAC.Station.Row3.Driver.Temperature,actuator,int8, row 3 driver temperature
+Vehicle.Cabin.HVAC.Station.Row3.Passenger.AirDistribution,actuator,string, row 3 passenger air distribution
+Vehicle.Cabin.HVAC.Station.Row3.Passenger.FanSpeed,actuator,uint8, row 3 passenger fan speed
+Vehicle.Cabin.HVAC.Station.Row3.Passenger.Temperature,actuator,int8, row 3 passenger temperature
+Vehicle.Cabin.HVAC.Station.Row4.Driver.AirDistribution,actuator,string, row 4 driver air distribution
+Vehicle.Cabin.HVAC.Station.Row4.Driver.FanSpeed,actuator,uint8, row 4 driver fan speed
+Vehicle.Cabin.HVAC.Station.Row4.Driver.Temperature,actuator,int8, row driver temperature
+Vehicle.Cabin.HVAC.Station.Row4.Passenger.AirDistribution,actuator,string, row 4 passenger air distribution
+Vehicle.Cabin.HVAC.Station.Row4.Passenger.FanSpeed,actuator,uint8, row 4 passenger fan speed
+Vehicle.Cabin.HVAC.Station.Row4.Passenger.Temperature,actuator,int8, row 4 passenger temperature
+Vehicle.Cabin.Infotainment.HMI.Brightness,actuator,float, hmi Brightness
+Vehicle.Cabin.Infotainment.HMI.CurrentLanguage,sensor,string, hmi current language 
+Vehicle.Cabin.Infotainment.HMI.DateFormat,actuator,string, hmi date format 
+Vehicle.Cabin.Infotainment.HMI.DayNightMode,actuator,string, hmi day night mode 
+Vehicle.Cabin.Infotainment.HMI.DisplayOffDuration,actuator,uint16, hmi display off duration 
+Vehicle.Cabin.Infotainment.HMI.DistanceUnit,actuator,string, hmi distance unit 
+Vehicle.Cabin.Infotainment.HMI.EVEconomyUnits,actuator,string, hmi eve economy unit 
+Vehicle.Cabin.Infotainment.HMI.FontSize,actuator,string, hmi font size 
+Vehicle.Cabin.Infotainment.HMI.FuelEconomyUnits,actuator,string, hmi fuel ecenomy unit 
+Vehicle.Cabin.Infotainment.HMI.FuelVolumeUnit,actuator,string, hmi fuel volume unit 
+Vehicle.Cabin.Infotainment.HMI.IsScreenAlwaysOn,actuator,boolean, hmi screen always on mode 
+Vehicle.Cabin.Infotainment.HMI.LastActionTime,sensor,string, hmi last action time 
+Vehicle.Cabin.Infotainment.HMI.TemperatureUnit,actuator,string, hmi temperature unit
+Vehicle.Cabin.Infotainment.HMI.TimeFormat,actuator,string, hmi time format
+Vehicle.Cabin.Infotainment.HMI.TirePressureUnit,actuator,string, hmi Tire Pressure unit
+Vehicle.Cabin.Infotainment.Media.Action,actuator,string, media action 
+Vehicle.Cabin.Infotainment.Media.DeclinedURI,sensor,string, media declined uri 
+Vehicle.Cabin.Infotainment.Media.Played.Album,sensor,string, media played album 
+Vehicle.Cabin.Infotainment.Media.Played.Artist,sensor,string, media played artist 
+Vehicle.Cabin.Infotainment.Media.Played.PlaybackRate,actuator,float, media played back rate 
+Vehicle.Cabin.Infotainment.Media.Played.Source,actuator,string, media played source 
+Vehicle.Cabin.Infotainment.Media.Played.Track,sensor,string, media played Track
+Vehicle.Cabin.Infotainment.Media.Played.URI,sensor,string, media played uri 
+Vehicle.Cabin.Infotainment.Media.SelectedURI,actuator,string, media selected uri 
+Vehicle.Cabin.Infotainment.Media.Volume,actuator,uint8, media volume 
+Vehicle.Cabin.Infotainment.Navigation.DestinationSet.Latitude,actuator,double, navigation latitue 
+Vehicle.Cabin.Infotainment.Navigation.DestinationSet.Longitude,actuator,double, navigation longitude 
+Vehicle.Cabin.Infotainment.Navigation.GuidanceVoice,actuator,string, navigation guidance voice 
+Vehicle.Cabin.Infotainment.Navigation.Mute,actuator,string, navigation mute 
+Vehicle.Cabin.Infotainment.Navigation.Volume,actuator,uint8, navigation volume 
+Vehicle.Cabin.Infotainment.PowerOptimizeLevel,actuator,uint8, Infotainment power optimize 
+Vehicle.Cabin.Infotainment.SmartphoneProjection.Active,actuator,string, smart phone projection 
+Vehicle.Cabin.Infotainment.SmartphoneProjection.Source,actuator,string, smart phone projection 
+Vehicle.Cabin.Infotainment.SmartphoneProjection.SupportedMode,attribute,string, smart phone projection 
+Vehicle.Cabin.IsWindowChildLockEngaged,actuator,boolean, windown child lock status 
+Vehicle.Cabin.Light.AmbientLight.Row1.DriverSide.Color,actuator,string, driver ambient light  color 
+Vehicle.Cabin.Light.AmbientLight.Row1.DriverSide.Intensity,actuator,uint8, driver ambient light intensity 
+Vehicle.Cabin.Light.AmbientLight.Row1.DriverSide.IsLightOn,actuator,boolean, driver ambient light 
+Vehicle.Cabin.Light.AmbientLight.Row1.PassengerSide.Color,actuator,string, passenger ambient light color 
+Vehicle.Cabin.Light.AmbientLight.Row1.PassengerSide.Intensity,actuator,uint8, passenger ambient light intensity 
+Vehicle.Cabin.Light.AmbientLight.Row1.PassengerSide.IsLightOn,actuator,boolean, passenger ambient light  
+Vehicle.Cabin.Light.AmbientLight.Row2.DriverSide.Color,actuator,string, driver ambient light row 2   color 
+Vehicle.Cabin.Light.AmbientLight.Row2.DriverSide.Intensity,actuator,uint8, driver ambient lights row 2 intensity
+Vehicle.Cabin.Light.AmbientLight.Row2.DriverSide.IsLightOn,actuator,boolean, driver ambient lights row 2  
+Vehicle.Cabin.Light.AmbientLight.Row2.PassengerSide.Color,actuator,string, passenger ambient lights row 2 color 
+Vehicle.Cabin.Light.AmbientLight.Row2.PassengerSide.Intensity,actuator,uint8, passenger ambient lights row 2 intensity 
+Vehicle.Cabin.Light.AmbientLight.Row2.PassengerSide.IsLightOn,actuator,boolean, passenger ambient lights row 2  
+Vehicle.Cabin.Light.InteractiveLightBar.Color,actuator,string, cabin interactive light bar color 
+Vehicle.Cabin.Light.InteractiveLightBar.Effect,actuator,string, cabin interactive light bar Effect 
+Vehicle.Cabin.Light.InteractiveLightBar.Intensity,actuator,uint8, cabin interactive light bar intensity
+Vehicle.Cabin.Light.InteractiveLightBar.IsLightOn,actuator,boolean, cabin interactive light bar light 
+Vehicle.Cabin.Light.IsDomeOn,actuator,boolean cabin light dome 
+Vehicle.Cabin.Light.IsGloveBoxOn,actuator,boolean, cabin light glove box 
+Vehicle.Cabin.Light.PerceivedAmbientLight,sensor,uint8, cabin light perceive ambient light 
+Vehicle.Cabin.Light.Spotlight.Row1.DriverSide.Color,actuator,string, cabin spot light row 1 driver side color 
+Vehicle.Cabin.Light.Spotlight.Row1.DriverSide.Intensity,actuator,uint8, cabin spot light row 1 driver side intensity 
+Vehicle.Cabin.Light.Spotlight.Row1.DriverSide.IsLightOn,actuator,boolean, cabin spot light row 1 driver side light 
+Vehicle.Cabin.Light.Spotlight.Row1.PassengerSide.Color,actuator,string, cabin spot light row 1 PassengerSide side color 
+Vehicle.Cabin.Light.Spotlight.Row1.PassengerSide.Intensity,actuator,uint8, cabin spot light row 1 PassengerSide side intensity
+Vehicle.Cabin.Light.Spotlight.Row1.PassengerSide.IsLightOn,actuator,boolean, cabin spot light row 1 PassengerSide side light 
+Vehicle.Cabin.Light.Spotlight.Row2.DriverSide.Color,actuator,string, cabin spot light row 2 driver side color 
+Vehicle.Cabin.Light.Spotlight.Row2.DriverSide.Intensity,actuator,uint8, cabin spot light row 2 driver side intensity
+Vehicle.Cabin.Light.Spotlight.Row2.DriverSide.IsLightOn,actuator,boolean, cabin spot light row 2 driver side light 
+Vehicle.Cabin.Light.Spotlight.Row2.PassengerSide.Color,actuator,string, cabin spot light row 2 passenger side color 
+Vehicle.Cabin.Light.Spotlight.Row2.PassengerSide.Intensity,actuator,uint8, cabin spot light row 2 passenger side intensity
+Vehicle.Cabin.Light.Spotlight.Row2.PassengerSide.IsLightOn,actuator,boolean, cabin spot light row 2 passenger side light 
+Vehicle.Cabin.Light.Spotlight.Row3.DriverSide.Color,actuator,string, cabin spot light row 3 driver side color 
+Vehicle.Cabin.Light.Spotlight.Row3.DriverSide.Intensity,actuator,uint8, cabin spot light row 3 driver side intensity
+Vehicle.Cabin.Light.Spotlight.Row3.DriverSide.IsLightOn,actuator,boolean, cabin spot light row 3 driver side light 
+Vehicle.Cabin.Light.Spotlight.Row3.PassengerSide.Color,actuator,string, cabin spot light row 3 passenger side color 
+Vehicle.Cabin.Light.Spotlight.Row3.PassengerSide.Intensity,actuator,uint8, cabin spot light row 3 passenger side intensity
+Vehicle.Cabin.Light.Spotlight.Row3.PassengerSide.IsLightOn,actuator,boolean, cabin spot light row 3 passenger side light 
+Vehicle.Cabin.Light.Spotlight.Row4.DriverSide.Color,actuator,string, cabin spot light row 4 driver side color 
+Vehicle.Cabin.Light.Spotlight.Row4.DriverSide.Intensity,actuator,uint8, cabin spot light row 4 driver side intensity
+Vehicle.Cabin.Light.Spotlight.Row4.DriverSide.IsLightOn,actuator,boolean, cabin spot light row 4 driver side light 
+Vehicle.Cabin.Light.Spotlight.Row4.PassengerSide.Color,actuator,string, cabin spot light row 4 passenger side color 
+Vehicle.Cabin.Light.Spotlight.Row4.PassengerSide.Intensity,actuator,uint8, cabin spot light row 4 passenger side intensity
+Vehicle.Cabin.Light.Spotlight.Row4.PassengerSide.IsLightOn,actuator,boolean, cabin spot light row 4 passenger side light 
+Vehicle.Cabin.PowerOptimizeLevel,actuator,uint8, cabin power optimize level 
+Vehicle.Cabin.RearShade.Position,actuator,uint8, cabin rear shape Position
+Vehicle.Cabin.RearShade.Switch,actuator,string, cabin rear shape Switch 
+Vehicle.Cabin.RearviewMirror.DimmingLevel,actuator,uint8, cabin rear view mirror Dimming Level
+Vehicle.Cabin.Seat.Row1.DriverSide.Airbag.IsDeployed,sensor,boolean, cabin seat row 1 driver side airbag deployed 
+Vehicle.Cabin.Seat.Row1.DriverSide.Backrest.Lumbar.Height,actuator,uint8, cabin seat row 1 driver side back rest lumbar hight 
+Vehicle.Cabin.Seat.Row1.DriverSide.Backrest.Lumbar.Support,actuator,float, cabin seat row 1 driver back rest lumbar supoort
+Vehicle.Cabin.Seat.Row1.DriverSide.Backrest.Recline,actuator,float,  cabin seat row 1 driver back rest lumbar recline 
+Vehicle.Cabin.Seat.Row1.DriverSide.Backrest.SideBolster.Support,actuator,float,  cabin seat row 1 driver head rest side bolster 
+Vehicle.Cabin.Seat.Row1.DriverSide.Headrest.Angle,actuator,float,  cabin seat row 1 driver head rest angle 
+Vehicle.Cabin.Seat.Row1.DriverSide.Headrest.Height,actuator,uint8, cabin seat row 1 driver head rest height 
+Vehicle.Cabin.Seat.Row1.DriverSide.Heating,actuator,int8, cabin seat row 1 driver side heating 
+Vehicle.Cabin.Seat.Row1.DriverSide.Height,actuator,uint16, cabin seat row 1 driver side height 
+Vehicle.Cabin.Seat.Row1.DriverSide.IsBelted,sensor,boolean, cabin seat row 1 driver side belted 
+Vehicle.Cabin.Seat.Row1.DriverSide.IsOccupied,sensor,boolean, cabin seat row 1 driver side occupied 
+Vehicle.Cabin.Seat.Row1.DriverSide.Massage,actuator,uint8, cabin seat row 1 driver side message 
+Vehicle.Cabin.Seat.Row1.DriverSide.Occupant.Identifier.Issuer,sensor,string, cabin seat row 1 driver occupant 
+Vehicle.Cabin.Seat.Row1.DriverSide.Occupant.Identifier.Subject,sensor,string, cabin seat row 1 driver occupant 
+Vehicle.Cabin.Seat.Row1.DriverSide.Position,actuator,uint16, driver seat position
+Vehicle.Cabin.Seat.Row1.DriverSide.Seating.Length,actuator,uint16, cabin seat row 1 driver seating Length 
+Vehicle.Cabin.Seat.Row1.DriverSide.Switch.Backrest.IsReclineBackwardEngaged,actuator,boolean, cabin seat row 1 driver Switch back rest recline backward engaged 
+Vehicle.Cabin.Seat.Row1.DriverSide.Switch.Backrest.IsReclineForwardEngaged,actuator,boolean, cabin seat row 1 driver Switch back rest recline forward engaged
+Vehicle.Cabin.Seat.Row1.DriverSide.Switch.Backrest.Lumbar.IsDownEngaged,actuator,boolean, cabin seat row 1 driver switch back rest lumbar down engaged 
+Vehicle.Cabin.Seat.Row1.DriverSide.Switch.Backrest.Lumbar.IsLessSupportEngaged,actuator,boolean, cabin seat row 1 driver switch back rest lumbar less support engaged
+Vehicle.Cabin.Seat.Row1.DriverSide.Switch.Backrest.Lumbar.IsMoreSupportEngaged,actuator,boolean, cabin seat row 1 driver switch back rest lumbar more supoort engaged
+Vehicle.Cabin.Seat.Row1.DriverSide.Switch.Backrest.Lumbar.IsUpEngaged,actuator,boolean, cabin seat row 1 driver switch back rest lumbar up engaged
+Vehicle.Cabin.Seat.Row1.DriverSide.Switch.Backrest.SideBolster.IsLessSupportEngaged,actuator,boolean, cabin seat row 1 driver switch back side bolster less support engaged
+Vehicle.Cabin.Seat.Row1.DriverSide.Switch.Backrest.SideBolster.IsMoreSupportEngaged,actuator,boolean, cabin seat row 1 driver switch back side bolster more support engaged
+Vehicle.Cabin.Seat.Row1.DriverSide.Switch.Headrest.IsBackwardEngaged,actuator,boolean, cabin seat row 1 driver switch head rest backward engaged
+Vehicle.Cabin.Seat.Row1.DriverSide.Switch.Headrest.IsDownEngaged,actuator,boolean, cabin seat row 1 driver switch head rest down engaged
+Vehicle.Cabin.Seat.Row1.DriverSide.Switch.Headrest.IsForwardEngaged,actuator,boolean, cabin seat row 1 driver switch head rest forward engaged
+Vehicle.Cabin.Seat.Row1.DriverSide.Switch.Headrest.IsUpEngaged,actuator,boolean, cabin seat row 1 driver switch head rest up engaged
+Vehicle.Cabin.Seat.Row1.DriverSide.Switch.IsBackwardEngaged,actuator,boolean, cabin seat row 1 driver switch backward engaged
+Vehicle.Cabin.Seat.Row1.DriverSide.Switch.IsCoolerEngaged,actuator,boolean, cabin seat row 1 driver switch cooler engaged
+Vehicle.Cabin.Seat.Row1.DriverSide.Switch.IsDownEngaged,actuator,boolean, cabin seat row 1 driver switch forward engaged 
+Vehicle.Cabin.Seat.Row1.DriverSide.Switch.IsForwardEngaged,actuator,boolean, cabin seat row 1 driver switch forward engaged
+Vehicle.Cabin.Seat.Row1.DriverSide.Switch.IsTiltBackwardEngaged,actuator,boolean, cabin seat row 1 driver switch tilt backward engaged
+Vehicle.Cabin.Seat.Row1.DriverSide.Switch.IsTiltForwardEngaged,actuator,boolean, cabin seat row 1 driver switch tilt forward engaged
+Vehicle.Cabin.Seat.Row1.DriverSide.Switch.IsUpEngaged,actuator,boolean, cabin seat row 1 driver switch tilt up engaged
+Vehicle.Cabin.Seat.Row1.DriverSide.Switch.IsWarmerEngaged,actuator,boolean, cabin seat row 1 driver switch warmer engaged
+Vehicle.Cabin.Seat.Row1.DriverSide.Switch.Massage.IsDecreaseEngaged,actuator,boolean, cabin seat row 1 driver switch message decrease 
+Vehicle.Cabin.Seat.Row1.DriverSide.Switch.Massage.IsIncreaseEngaged,actuator,boolean, cabin seat row 1 driver switch message increase 
+Vehicle.Cabin.Seat.Row1.DriverSide.Switch.Seating.IsBackwardEngaged,actuator,boolean, cabin seat row 1 driver switch seating backward engaged
+Vehicle.Cabin.Seat.Row1.DriverSide.Switch.Seating.IsForwardEngaged,actuator,boolean, cabin seat row 1 driver switch seating forward engaged
+Vehicle.Cabin.Seat.Row1.DriverSide.Tilt,actuator,float, cabin seat row 1 driver side tilt 
+Vehicle.Cabin.Seat.Row1.Middle.Airbag.IsDeployed,sensor,boolean, cabin seat row 1 middle airbag deployed 
+Vehicle.Cabin.Seat.Row1.Middle.Backrest.Lumbar.Height,actuator,uint8, cabin seat row 1 middle back rest lumbar height 
+Vehicle.Cabin.Seat.Row1.Middle.Backrest.Lumbar.Support,actuator,float, cabin seat row 1 middle back rest lumbar support
+Vehicle.Cabin.Seat.Row1.Middle.Backrest.Recline,actuator,float, cabin seat row 1 middle back rest lumbar recline
+Vehicle.Cabin.Seat.Row1.Middle.Backrest.SideBolster.Support,actuator,float, cabin seat row 1 middle back rest lumbar side bolster 
+Vehicle.Cabin.Seat.Row1.Middle.Headrest.Angle,actuator,float, cabin seat row 1 middle head rest angle 
+Vehicle.Cabin.Seat.Row1.Middle.Headrest.Height,actuator,uint8,  cabin seat row 1 middle head rest height 
+Vehicle.Cabin.Seat.Row1.Middle.Heating,actuator,int8, cabin seat row 1 middle heating 
+Vehicle.Cabin.Seat.Row1.Middle.Height,actuator,uint16, cabin seat row 1 middle height  
+Vehicle.Cabin.Seat.Row1.Middle.IsBelted,sensor,boolean, cabin seat row 1 middle belted  
+Vehicle.Cabin.Seat.Row1.Middle.IsOccupied,sensor,boolean, cabin seat row 1 middle occupied 
+Vehicle.Cabin.Seat.Row1.Middle.Massage,actuator,uint8, cabin seat row 1 middle massage 
+Vehicle.Cabin.Seat.Row1.Middle.Occupant.Identifier.Issuer,sensor,string, cabin seat row 1 middle occupant identifier issuer 
+Vehicle.Cabin.Seat.Row1.Middle.Occupant.Identifier.Subject,sensor,string, cabin seat row 1 middle occupant identifier subject 
+Vehicle.Cabin.Seat.Row1.Middle.Position,actuator,uint16, cabin seat row 1 middle position 
+Vehicle.Cabin.Seat.Row1.Middle.Seating.Length,actuator,uint16, cabin seat row 1 middle  seating Length 
+Vehicle.Cabin.Seat.Row1.Middle.Switch.Backrest.IsReclineBackwardEngaged,actuator,boolean, cabin seat row 1 middle switch back rest recline backward engaged
+Vehicle.Cabin.Seat.Row1.Middle.Switch.Backrest.IsReclineForwardEngaged,actuator,boolean, cabin seat row 1 middle switch back rest recline forward engaged
+Vehicle.Cabin.Seat.Row1.Middle.Switch.Backrest.Lumbar.IsDownEngaged,actuator,boolean, cabin seat row 1 middle switch back rest lumbar down engaged
+Vehicle.Cabin.Seat.Row1.Middle.Switch.Backrest.Lumbar.IsLessSupportEngaged,actuator,boolean, cabin seat row 1 middle switch back rest lumbar less support engaged
+Vehicle.Cabin.Seat.Row1.Middle.Switch.Backrest.Lumbar.IsMoreSupportEngaged,actuator,boolean, cabin seat row 1 middle switch back rest lumbar more support engaged
+Vehicle.Cabin.Seat.Row1.Middle.Switch.Backrest.Lumbar.IsUpEngaged,actuator,boolean, cabin seat row 1 middle switch back rest lumbar up engaged
+Vehicle.Cabin.Seat.Row1.Middle.Switch.Backrest.SideBolster.IsLessSupportEngaged,actuator,boolean, cabin seat row 1 middle switch back rest side bolster less support engaged
+Vehicle.Cabin.Seat.Row1.Middle.Switch.Backrest.SideBolster.IsMoreSupportEngaged,actuator,boolean, cabin seat row 1 middle switch back rest side bolster more support engaged
+Vehicle.Cabin.Seat.Row1.Middle.Switch.Headrest.IsBackwardEngaged,actuator,boolean, cabin seat row 1 middle switch head rest backward engaged
+Vehicle.Cabin.Seat.Row1.Middle.Switch.Headrest.IsDownEngaged,actuator,boolean, cabin seat row 1 middle switch head rest down engaged
+Vehicle.Cabin.Seat.Row1.Middle.Switch.Headrest.IsForwardEngaged,actuator,boolean, cabin seat row 1 middle switch head rest forward engaged
+Vehicle.Cabin.Seat.Row1.Middle.Switch.Headrest.IsUpEngaged,actuator,boolean, cabin seat row 1 middle switch head rest up engaged
+Vehicle.Cabin.Seat.Row1.Middle.Switch.IsBackwardEngaged,actuator,boolean, cabin seat row 1 middle switch backward engaged
+Vehicle.Cabin.Seat.Row1.Middle.Switch.IsCoolerEngaged,actuator,boolean, cabin seat row 1 middle switch cooler engaged
+Vehicle.Cabin.Seat.Row1.Middle.Switch.IsDownEngaged,actuator,boolean, cabin seat row 1 middle switch down engaged
+Vehicle.Cabin.Seat.Row1.Middle.Switch.IsForwardEngaged,actuator,boolean, cabin seat row 1 middle switch forward engaged
+Vehicle.Cabin.Seat.Row1.Middle.Switch.IsTiltBackwardEngaged,actuator,boolean, cabin seat row 1 middle switch tilt backward engaged
+Vehicle.Cabin.Seat.Row1.Middle.Switch.IsTiltForwardEngaged,actuator,boolean, cabin seat row 1 middle switch tilt forward engaged
+Vehicle.Cabin.Seat.Row1.Middle.Switch.IsUpEngaged,actuator,boolean, cabin seat row 1 middle switch up engaged
+Vehicle.Cabin.Seat.Row1.Middle.Switch.IsWarmerEngaged,actuator,boolean, cabin seat row 1 middle switch warmer engaged
+Vehicle.Cabin.Seat.Row1.Middle.Switch.Massage.IsDecreaseEngaged,actuator,boolean, cabin seat row 1 middle switch massage decrease engaged
+Vehicle.Cabin.Seat.Row1.Middle.Switch.Massage.IsIncreaseEngaged,actuator,boolean, cabin seat row 1 middle switch massage increase engaged
+Vehicle.Cabin.Seat.Row1.Middle.Switch.Seating.IsBackwardEngaged,actuator,boolean, cabin seat row 1 middle switch seating backward engaged
+Vehicle.Cabin.Seat.Row1.Middle.Switch.Seating.IsForwardEngaged,actuator,boolean, cabin seat row 1 middle switch seating forward engaged
+Vehicle.Cabin.Seat.Row1.Middle.Tilt,actuator,float, cabin seat row 1 middle tilt
+Vehicle.Cabin.Seat.Row1.PassengerSide.Airbag.IsDeployed,sensor,boolean, cabin seat row 1 passenger side airbag deployed
+Vehicle.Cabin.Seat.Row1.PassengerSide.Backrest.Lumbar.Height,actuator,uint8, cabin seat row 1 passenger side back rest lumbar height
+Vehicle.Cabin.Seat.Row1.PassengerSide.Backrest.Lumbar.Support,actuator,float, cabin seat row 1 passenger side back rest lumbar support
+Vehicle.Cabin.Seat.Row1.PassengerSide.Backrest.Recline,actuator,float, cabin seat row 1 passenger side back rest recline
+Vehicle.Cabin.Seat.Row1.PassengerSide.Backrest.SideBolster.Support,actuator,float, cabin seat row 1 passenger side back rest side bolster support
+Vehicle.Cabin.Seat.Row1.PassengerSide.Headrest.Angle,actuator,float, cabin seat row 1 passenger side head rest angle
+Vehicle.Cabin.Seat.Row1.PassengerSide.Headrest.Height,actuator,uint8, cabin seat row 1 passenger side head rest height
+Vehicle.Cabin.Seat.Row1.PassengerSide.Heating,actuator,int8, cabin seat row 1 passenger side heating
+Vehicle.Cabin.Seat.Row1.PassengerSide.Height,actuator,uint16, cabin seat row 1 passenger side height
+Vehicle.Cabin.Seat.Row1.PassengerSide.IsBelted,sensor,boolean, cabin seat row 1 passenger side belted
+Vehicle.Cabin.Seat.Row1.PassengerSide.IsOccupied,sensor,boolean, cabin seat row 1 passenger side occupied
+Vehicle.Cabin.Seat.Row1.PassengerSide.Massage,actuator,uint8, cabin seat row 1 passenger side massage
+Vehicle.Cabin.Seat.Row1.PassengerSide.Occupant.Identifier.Issuer,sensor,string, cabin seat row 1 passenger side occupant identifier issuer
+Vehicle.Cabin.Seat.Row1.PassengerSide.Occupant.Identifier.Subject,sensor,string, cabin seat row 1 passenger side occupant identifier subject
+Vehicle.Cabin.Seat.Row1.PassengerSide.Position,actuator,uint16, cabin seat row 1 passenger side position
+Vehicle.Cabin.Seat.Row1.PassengerSide.Seating.Length,actuator,uint16, cabin seat row 1 passenger side seating length
+Vehicle.Cabin.Seat.Row1.PassengerSide.Switch.Backrest.IsReclineBackwardEngaged,actuator,boolean, cabin seat row 1 passenger side switch back rest recline backward engaged
+Vehicle.Cabin.Seat.Row1.PassengerSide.Switch.Backrest.IsReclineForwardEngaged,actuator,boolean, cabin seat row 1 passenger side switch back rest recline forward engaged
+Vehicle.Cabin.Seat.Row1.PassengerSide.Switch.Backrest.Lumbar.IsDownEngaged,actuator,boolean, cabin seat row 1 passenger side switch back rest lumbar down engaged
+Vehicle.Cabin.Seat.Row1.PassengerSide.Switch.Backrest.Lumbar.IsLessSupportEngaged,actuator,boolean, cabin seat row 1 passenger side switch back rest lumbar less support engaged
+Vehicle.Cabin.Seat.Row1.PassengerSide.Switch.Backrest.Lumbar.IsMoreSupportEngaged,actuator,boolean, cabin seat row 1 passenger side switch back rest lumbar more support engaged
+Vehicle.Cabin.Seat.Row1.PassengerSide.Switch.Backrest.Lumbar.IsUpEngaged,actuator,boolean, cabin seat row 1 passenger side switch back rest lumbar up engaged
+Vehicle.Cabin.Seat.Row1.PassengerSide.Switch.Backrest.SideBolster.IsLessSupportEngaged,actuator,boolean, cabin seat row 1 passenger side switch back rest side bolster less support engaged
+Vehicle.Cabin.Seat.Row1.PassengerSide.Switch.Backrest.SideBolster.IsMoreSupportEngaged,actuator,boolean, cabin seat row 1 passenger side switch back rest side bolster more support engaged
+Vehicle.Cabin.Seat.Row1.PassengerSide.Switch.Headrest.IsBackwardEngaged,actuator,boolean, cabin seat row 1 passenger side switch head rest backward engaged
+Vehicle.Cabin.Seat.Row1.PassengerSide.Switch.Headrest.IsDownEngaged,actuator,boolean, cabin seat row 1 passenger side switch head rest down engaged
+Vehicle.Cabin.Seat.Row1.PassengerSide.Switch.Headrest.IsForwardEngaged,actuator,boolean, cabin seat row 1 passenger side switch head rest forward engaged
+Vehicle.Cabin.Seat.Row1.PassengerSide.Switch.Headrest.IsUpEngaged,actuator,boolean, cabin seat row 1 passenger side switch head rest up engaged
+Vehicle.Cabin.Seat.Row1.PassengerSide.Switch.IsBackwardEngaged,actuator,boolean, cabin seat row 1 passenger side switch backward engaged
+Vehicle.Cabin.Seat.Row1.PassengerSide.Switch.IsCoolerEngaged,actuator,boolean, cabin seat row 1 passenger side switch cooler engaged
+Vehicle.Cabin.Seat.Row1.PassengerSide.Switch.IsDownEngaged,actuator,boolean, cabin seat row 1 passenger side switch down engaged
+Vehicle.Cabin.Seat.Row1.PassengerSide.Switch.IsForwardEngaged,actuator,boolean, cabin seat row 1 passenger side switch forward engaged
+Vehicle.Cabin.Seat.Row1.PassengerSide.Switch.IsTiltBackwardEngaged,actuator,boolean, cabin seat row 1 passenger side switch tilt backward engaged
+Vehicle.Cabin.Seat.Row1.PassengerSide.Switch.IsTiltForwardEngaged,actuator,boolean, cabin seat row 1 passenger side switch tilt forward engaged
+Vehicle.Cabin.Seat.Row1.PassengerSide.Switch.IsUpEngaged,actuator,boolean, cabin seat row 1 passenger side switch up engaged
+Vehicle.Cabin.Seat.Row1.PassengerSide.Switch.IsWarmerEngaged,actuator,boolean, cabin seat row 1 passenger side switch warmer engaged
+Vehicle.Cabin.Seat.Row1.PassengerSide.Switch.Massage.IsDecreaseEngaged,actuator,boolean, cabin seat row 1 passenger side switch massage decrease engaged
+Vehicle.Cabin.Seat.Row1.PassengerSide.Switch.Massage.IsIncreaseEngaged,actuator,boolean, cabin seat row 1 passenger side switch massage increase engaged
+Vehicle.Cabin.Seat.Row1.PassengerSide.Switch.Seating.IsBackwardEngaged,actuator,boolean, cabin seat row 1 passenger side switch seating backward engaged
+Vehicle.Cabin.Seat.Row1.PassengerSide.Switch.Seating.IsForwardEngaged,actuator,boolean, cabin seat row 1 passenger side switch seating forward engaged
+Vehicle.Cabin.Seat.Row1.PassengerSide.Tilt,actuator,float, cabin seat row 1 passenger side tilt
+Vehicle.Cabin.Seat.Row2.DriverSide.Airbag.IsDeployed,sensor,boolean, cabin seat row 2 driver side airbag deployed
+Vehicle.Cabin.Seat.Row2.DriverSide.Backrest.Lumbar.Height,actuator,uint8, cabin seat row 2 driver side back rest lumbar height
+Vehicle.Cabin.Seat.Row2.DriverSide.Backrest.Lumbar.Support,actuator,float, cabin seat row 2 driver side back rest lumbar support
+Vehicle.Cabin.Seat.Row2.DriverSide.Backrest.Recline,actuator,float, cabin seat row 2 driver side back rest recline
+Vehicle.Cabin.Seat.Row2.DriverSide.Backrest.Recline,actuator,float, cabin seat row 2 driver side back rest recline
+Vehicle.Cabin.Seat.Row2.DriverSide.Backrest.SideBolster.Support,actuator,float, cabin seat row 2 driver side back rest side bolster support
+Vehicle.Cabin.Seat.Row2.DriverSide.Headrest.Angle,actuator,float, cabin seat row 2 driver side head rest angle
+Vehicle.Cabin.Seat.Row2.DriverSide.Headrest.Height,actuator,uint8, cabin seat row 2 driver side head rest height
+Vehicle.Cabin.Seat.Row2.DriverSide.Heating,actuator,int8, cabin seat row 2 driver side heating
+Vehicle.Cabin.Seat.Row2.DriverSide.Height,actuator,uint16, cabin seat row 2 driver side height
+Vehicle.Cabin.Seat.Row2.DriverSide.IsBelted,sensor,boolean, cabin seat row 2 driver side belted
+Vehicle.Cabin.Seat.Row2.DriverSide.IsOccupied,sensor,boolean, cabin seat row 2 driver side occupied
+Vehicle.Cabin.Seat.Row2.DriverSide.Massage,actuator,uint8, cabin seat row 2 driver side massage
+Vehicle.Cabin.Seat.Row2.DriverSide.Occupant.Identifier.Issuer,sensor,string, cabin seat row 2 driver side occupant identifier issuer
+Vehicle.Cabin.Seat.Row2.DriverSide.Occupant.Identifier.Subject,sensor,string, cabin seat row 2 driver side occupant identifier subject
+Vehicle.Cabin.Seat.Row2.DriverSide.Position,actuator,uint16, cabin seat row 2 driver side position
+Vehicle.Cabin.Seat.Row2.DriverSide.Seating.Length,actuator,uint16, cabin seat row 2 driver side seating length
+Vehicle.Cabin.Seat.Row2.DriverSide.Switch.Backrest.IsReclineBackwardEngaged,actuator,boolean, cabin seat row 2 driver side switch back rest recline backward engaged
+Vehicle.Cabin.Seat.Row2.DriverSide.Switch.Backrest.IsReclineForwardEngaged,actuator,boolean, cabin seat row 2 driver side switch back rest recline forward engaged
+Vehicle.Cabin.Seat.Row2.DriverSide.Switch.Backrest.Lumbar.IsDownEngaged,actuator,boolean, cabin seat row 2 driver side switch back rest lumbar down engaged
+Vehicle.Cabin.Seat.Row2.DriverSide.Switch.Backrest.Lumbar.IsLessSupportEngaged,actuator,boolean, cabin seat row 2 driver side switch back rest lumbar less support engaged
+Vehicle.Cabin.Seat.Row2.DriverSide.Switch.Backrest.Lumbar.IsMoreSupportEngaged,actuator,boolean, cabin seat row 2 driver side switch back rest lumbar more support engaged
+Vehicle.Cabin.Seat.Row2.DriverSide.Switch.Backrest.Lumbar.IsUpEngaged,actuator,boolean, cabin seat row 2 driver side switch back rest lumbar up engaged
+Vehicle.Cabin.Seat.Row2.DriverSide.Switch.Backrest.SideBolster.IsLessSupportEngaged,actuator,boolean, cabin seat row 2 driver side switch back rest side bolster less support engaged
+Vehicle.Cabin.Seat.Row2.DriverSide.Switch.Backrest.SideBolster.IsMoreSupportEngaged,actuator,boolean, cabin seat row 2 driver side switch back rest side bolster more support engaged
+Vehicle.Cabin.Seat.Row2.DriverSide.Switch.Headrest.IsBackwardEngaged,actuator,boolean, cabin seat row 2 driver side switch head rest backward engaged
+Vehicle.Cabin.Seat.Row2.DriverSide.Switch.Headrest.IsDownEngaged,actuator,boolean, cabin seat row 2 driver side switch head rest down engaged
+Vehicle.Cabin.Seat.Row2.DriverSide.Switch.Headrest.IsForwardEngaged,actuator,boolean, cabin seat row 2 driver side switch head rest forward engaged
+Vehicle.Cabin.Seat.Row2.DriverSide.Switch.Headrest.IsUpEngaged,actuator,boolean, cabin seat row 2 driver side switch head rest up engaged
+Vehicle.Cabin.Seat.Row2.DriverSide.Switch.IsBackwardEngaged,actuator,boolean, cabin seat row 2 driver side switch backward engaged
+Vehicle.Cabin.Seat.Row2.DriverSide.Switch.IsCoolerEngaged,actuator,boolean, cabin seat row 2 driver side switch cooler engaged
+Vehicle.Cabin.Seat.Row2.DriverSide.Switch.IsDownEngaged,actuator,boolean, cabin seat row 2 driver side switch down engaged
+Vehicle.Cabin.Seat.Row2.DriverSide.Switch.IsForwardEngaged,actuator,boolean, cabin seat row 2 driver side switch forward engaged
+Vehicle.Cabin.Seat.Row2.DriverSide.Switch.IsTiltBackwardEngaged,actuator,boolean, cabin seat row 2 driver side switch tilt backward engaged
+Vehicle.Cabin.Seat.Row2.DriverSide.Switch.IsTiltForwardEngaged,actuator,boolean, cabin seat row 2 driver side switch tilt forward engaged
+Vehicle.Cabin.Seat.Row2.DriverSide.Switch.IsUpEngaged,actuator,boolean, cabin seat row 2 driver side switch up engaged
+Vehicle.Cabin.Seat.Row2.DriverSide.Switch.IsWarmerEngaged,actuator,boolean, cabin seat row 2 driver side switch warmer engaged
+Vehicle.Cabin.Seat.Row2.DriverSide.Switch.Massage.IsDecreaseEngaged,actuator,boolean, cabin seat row 2 driver side switch massage decrease engaged
+Vehicle.Cabin.Seat.Row2.DriverSide.Switch.Massage.IsIncreaseEngaged,actuator,boolean, cabin seat row 2 driver side switch massage increase engaged
+Vehicle.Cabin.Seat.Row2.DriverSide.Switch.Seating.IsBackwardEngaged,actuator,boolean, cabin seat row 2 driver side switch seating backward engaged
+Vehicle.Cabin.Seat.Row2.DriverSide.Switch.Seating.IsForwardEngaged,actuator,boolean, cabin seat row 2 driver side switch seating forward engaged
+Vehicle.Cabin.Seat.Row2.DriverSide.Tilt,actuator,float, cabin seat row 2 driver side tilt
+Vehicle.Cabin.Seat.Row2.Middle.Airbag.IsDeployed,sensor,boolean, cabin seat row 2 middle airbag deployed
+Vehicle.Cabin.Seat.Row2.Middle.Backrest.Lumbar.Height,actuator,uint8, cabin seat row 2 middle back rest lumbar height
+Vehicle.Cabin.Seat.Row2.Middle.Backrest.Lumbar.Support,actuator,float, cabin seat row 2 middle back rest lumbar support
+Vehicle.Cabin.Seat.Row2.Middle.Backrest.Recline,actuator,float, cabin seat row 2 middle back rest recline
+Vehicle.Cabin.Seat.Row2.Middle.Backrest.SideBolster.Support,actuator,float, cabin seat row 2 middle back rest side bolster support
+Vehicle.Cabin.Seat.Row2.Middle.Headrest.Angle,actuator,float, cabin seat row 2 middle head rest angle
+Vehicle.Cabin.Seat.Row2.Middle.Headrest.Height,actuator,uint8, cabin seat row 2 middle head rest height
+Vehicle.Cabin.Seat.Row2.Middle.Heating,actuator,int8, cabin seat row 2 middle heating
+Vehicle.Cabin.Seat.Row2.Middle.Height,actuator,uint16, cabin seat row 2 middle height
+Vehicle.Cabin.Seat.Row2.Middle.IsBelted,sensor,boolean, cabin seat row 2 middle belted
+Vehicle.Cabin.Seat.Row2.Middle.IsOccupied,sensor,boolean, cabin seat row 2 middle occupied
+Vehicle.Cabin.Seat.Row2.Middle.Massage,actuator,uint8, cabin seat row 2 middle massage
+Vehicle.Cabin.Seat.Row2.Middle.Occupant.Identifier.Issuer,sensor,string, cabin seat row 2 middle occupant identifier issuer
+Vehicle.Cabin.Seat.Row2.Middle.Occupant.Identifier.Subject,sensor,string, cabin seat row 2 middle occupant identifier subject
+Vehicle.Cabin.Seat.Row2.Middle.Position,actuator,uint16, cabin seat row 2 middle position
+Vehicle.Cabin.Seat.Row2.Middle.Seating.Length,actuator,uint16, cabin seat row 2 middle seating length
+Vehicle.Cabin.Seat.Row2.Middle.Switch.Backrest.IsReclineBackwardEngaged,actuator,boolean, cabin seat row 2 middle switch back rest recline backward engaged
+Vehicle.Cabin.Seat.Row2.Middle.Switch.Backrest.IsReclineForwardEngaged,actuator,boolean, cabin seat row 2 middle switch back rest recline forward engaged
+Vehicle.Cabin.Seat.Row2.Middle.Switch.Backrest.Lumbar.IsDownEngaged,actuator,boolean, cabin seat row 2 middle switch back rest lumbar down engaged
+Vehicle.Cabin.Seat.Row2.Middle.Switch.Backrest.Lumbar.IsLessSupportEngaged,actuator,boolean, cabin seat row 2 middle switch back rest lumbar less support engaged
+Vehicle.Cabin.Seat.Row2.Middle.Switch.Backrest.Lumbar.IsMoreSupportEngaged,actuator,boolean, cabin seat row 2 middle switch back rest lumbar more support engaged
+Vehicle.Cabin.Seat.Row2.Middle.Switch.Backrest.Lumbar.IsUpEngaged,actuator,boolean, cabin seat row 2 middle switch back rest lumbar up engaged
+Vehicle.Cabin.Seat.Row2.Middle.Switch.Backrest.SideBolster.IsLessSupportEngaged,actuator,boolean, cabin seat row 2 middle switch back rest side bolster less support engaged
+Vehicle.Cabin.Seat.Row2.Middle.Switch.Backrest.SideBolster.IsMoreSupportEngaged,actuator,boolean, cabin seat row 2 middle switch back rest side bolster more support engaged
+Vehicle.Cabin.Seat.Row2.Middle.Switch.Headrest.IsBackwardEngaged,actuator,boolean, cabin seat row 2 middle switch head rest backward engaged
+Vehicle.Cabin.Seat.Row2.Middle.Switch.Headrest.IsDownEngaged,actuator,boolean, cabin seat row 2 middle switch head rest down engaged
+Vehicle.Cabin.Seat.Row2.Middle.Switch.Headrest.IsForwardEngaged,actuator,boolean, cabin seat row 2 middle switch head rest forward engaged
+Vehicle.Cabin.Seat.Row2.Middle.Switch.Headrest.IsUpEngaged,actuator,boolean, cabin seat row 2 middle switch head rest up engaged
+Vehicle.Cabin.Seat.Row2.Middle.Switch.IsBackwardEngaged,actuator,boolean, cabin seat row 2 middle switch backward engaged
+Vehicle.Cabin.Seat.Row2.Middle.Switch.IsCoolerEngaged,actuator,boolean, cabin seat row 2 middle switch cooler engaged
+Vehicle.Cabin.Seat.Row2.Middle.Switch.IsDownEngaged,actuator,boolean, cabin seat row 2 middle switch down engaged
+Vehicle.Cabin.Seat.Row2.Middle.Switch.IsForwardEngaged,actuator,boolean, cabin seat row 2 middle switch forward engaged
+Vehicle.Cabin.Seat.Row2.Middle.Switch.IsTiltBackwardEngaged,actuator,boolean, cabin seat row 2 middle switch tilt backward engaged
+Vehicle.Cabin.Seat.Row2.Middle.Switch.IsTiltForwardEngaged,actuator,boolean, cabin seat row 2 middle switch tilt forward engaged
+Vehicle.Cabin.Seat.Row2.Middle.Switch.IsUpEngaged,actuator,boolean, cabin seat row 2 middle switch up engaged
+Vehicle.Cabin.Seat.Row2.Middle.Switch.IsWarmerEngaged,actuator,boolean, cabin seat row 2 middle switch warmer engaged
+Vehicle.Cabin.Seat.Row2.Middle.Switch.Massage.IsDecreaseEngaged,actuator,boolean, cabin seat row 2 middle switch massage decrease engaged
+Vehicle.Cabin.Seat.Row2.Middle.Switch.Massage.IsIncreaseEngaged,actuator,boolean, cabin seat row 2 middle switch massage increase engaged
+Vehicle.Cabin.Seat.Row2.Middle.Switch.Seating.IsBackwardEngaged,actuator,boolean, cabin seat row 2 middle switch seating backward engaged
+Vehicle.Cabin.Seat.Row2.Middle.Switch.Seating.IsForwardEngaged,actuator,boolean, cabin seat row 2 middle switch seating forward engaged
+Vehicle.Cabin.Seat.Row2.Middle.Tilt,actuator,float, cabin seat row 2 middle tilt
+Vehicle.Cabin.Seat.Row2.PassengerSide.Airbag.IsDeployed,sensor,boolean, cabin seat row 2 passenger side airbag deployed
+Vehicle.Cabin.Seat.Row2.PassengerSide.Backrest.Lumbar.Height,actuator,uint8, cabin seat row 2 passenger side back rest lumbar height
+Vehicle.Cabin.Seat.Row2.PassengerSide.Backrest.Lumbar.Support,actuator,float, cabin seat row 2 passenger side back rest lumbar support
+Vehicle.Cabin.Seat.Row2.PassengerSide.Backrest.Recline,actuator,float, cabin seat row 2 passenger side back rest recline
+Vehicle.Cabin.Seat.Row2.PassengerSide.Backrest.SideBolster.Support,actuator,float, cabin seat row 2 passenger side back rest side bolster support
+Vehicle.Cabin.Seat.Row2.PassengerSide.Headrest.Angle,actuator,float, cabin seat row 2 passenger side head rest angle
+Vehicle.Cabin.Seat.Row2.PassengerSide.Headrest.Height,actuator,uint8, cabin seat row 2 passenger side head rest height
+Vehicle.Cabin.Seat.Row2.PassengerSide.Heating,actuator,int8, cabin seat row 2 passenger side heating
+Vehicle.Cabin.Seat.Row2.PassengerSide.Height,actuator,uint16, cabin seat row 2 passenger side height
+Vehicle.Cabin.Seat.Row2.PassengerSide.IsBelted,sensor,boolean, cabin seat row 2 passenger side belted
+Vehicle.Cabin.Seat.Row2.PassengerSide.IsOccupied,sensor,boolean, cabin seat row 2 passenger side occupied
+Vehicle.Cabin.Seat.Row2.PassengerSide.Massage,actuator,uint8, cabin seat row 2 passenger side massage
+Vehicle.Cabin.Seat.Row2.PassengerSide.Occupant.Identifier.Issuer,sensor,string, cabin seat row 2 passenger side occupant identifier issuer
+Vehicle.Cabin.Seat.Row2.PassengerSide.Occupant.Identifier.Subject,sensor,string, cabin seat row 2 passenger side occupant identifier subject
+Vehicle.Cabin.Seat.Row2.PassengerSide.Position,actuator,uint16, cabin seat row 2 passenger side position
+Vehicle.Cabin.Seat.Row2.PassengerSide.Seating.Length,actuator,uint16, cabin seat row 2 passenger side seating length
+Vehicle.Cabin.Seat.Row2.PassengerSide.Switch.Backrest.IsReclineBackwardEngaged,actuator,boolean, cabin seat row 2 passenger side switch back rest recline backward engaged
+Vehicle.Cabin.Seat.Row2.PassengerSide.Switch.Backrest.IsReclineForwardEngaged,actuator,boolean, cabin seat row 2 passenger side switch back rest recline forward engaged
+Vehicle.Cabin.Seat.Row2.PassengerSide.Switch.Backrest.Lumbar.IsDownEngaged,actuator,boolean, cabin seat row 2 passenger side switch back rest lumbar down engaged
+Vehicle.Cabin.Seat.Row2.PassengerSide.Switch.Backrest.Lumbar.IsLessSupportEngaged,actuator,boolean, cabin seat row 2 passenger side switch back rest lumbar less support engaged
+Vehicle.Cabin.Seat.Row2.PassengerSide.Switch.Backrest.Lumbar.IsMoreSupportEngaged,actuator,boolean, cabin seat row 2 passenger side switch back rest lumbar more supoort engaged
+Vehicle.Cabin.Seat.Row2.PassengerSide.Switch.Backrest.Lumbar.IsUpEngaged,actuator,boolean, cabin seat row 2 passenger side switch back rest lumbar up engaged
+
+Vehicle.Cabin.Seat.Row2.PassengerSide.Switch.Backrest.SideBolster.IsLessSupportEngaged,actuator,boolean, cabin seat row 2 passenger side switch backrest side bolster less support engaged
+Vehicle.Cabin.Seat.Row2.PassengerSide.Switch.Backrest.SideBolster.IsMoreSupportEngaged,actuator,boolean, cabin seat row 2 passenger side switch backrest side bolster more support engaged
+Vehicle.Cabin.Seat.Row2.PassengerSide.Switch.Headrest.IsBackwardEngaged,actuator,boolean, cabin seat row 2 passenger side switch headrest backward engaged
+Vehicle.Cabin.Seat.Row2.PassengerSide.Switch.Headrest.IsDownEngaged,actuator,boolean, cabin seat row 2 passenger side switch headrest down engaged
+Vehicle.Cabin.Seat.Row2.PassengerSide.Switch.Headrest.IsForwardEngaged,actuator,boolean, cabin seat row 2 passenger side switch headrest forward engaged
+Vehicle.Cabin.Seat.Row2.PassengerSide.Switch.Headrest.IsUpEngaged,actuator,boolean, cabin seat row 2 passenger side switch headrest up engaged
+Vehicle.Cabin.Seat.Row2.PassengerSide.Switch.IsBackwardEngaged,actuator,boolean, cabin seat row 2 passenger side switch backward engaged
+Vehicle.Cabin.Seat.Row2.PassengerSide.Switch.IsCoolerEngaged,actuator,boolean, cabin seat row 2 passenger side switch cooler engaged
+Vehicle.Cabin.Seat.Row2.PassengerSide.Switch.IsDownEngaged,actuator,boolean, cabin seat row 2 passenger side switch down engaged
+Vehicle.Cabin.Seat.Row2.PassengerSide.Switch.IsForwardEngaged,actuator,boolean, cabin seat row 2 passenger side switch forward engaged
+Vehicle.Cabin.Seat.Row2.PassengerSide.Switch.IsTiltBackwardEngaged,actuator,boolean, cabin seat row 2 passenger side switch tilt backward engaged
+Vehicle.Cabin.Seat.Row2.PassengerSide.Switch.IsTiltForwardEngaged,actuator,boolean, cabin seat row 2 passenger side switch tilt forward engaged
+Vehicle.Cabin.Seat.Row2.PassengerSide.Switch.IsUpEngaged,actuator,boolean, cabin seat row 2 passenger side switch up engaged
+Vehicle.Cabin.Seat.Row2.PassengerSide.Switch.IsWarmerEngaged,actuator,boolean, cabin seat row 2 passenger side switch warmer engaged
+Vehicle.Cabin.Seat.Row2.PassengerSide.Switch.Massage.IsDecreaseEngaged,actuator,boolean, cabin seat row 2 passenger side switch massage decrease engaged
+Vehicle.Cabin.Seat.Row2.PassengerSide.Switch.Massage.IsIncreaseEngaged,actuator,boolean, cabin seat row 2 passenger side switch massage increase engaged
+Vehicle.Cabin.Seat.Row2.PassengerSide.Switch.Seating.IsBackwardEngaged,actuator,boolean, cabin seat row 2 passenger side switch seating backward engaged
+Vehicle.Cabin.Seat.Row2.PassengerSide.Switch.Seating.IsForwardEngaged,actuator,boolean, cabin seat row 2 passenger side switch seating forward engaged
+Vehicle.Cabin.Seat.Row2.PassengerSide.Tilt,actuator,float, cabin seat row 2 passenger side tilt
+Vehicle.Cabin.SeatPosCount,attribute,uint8, total number of seat positions
+Vehicle.Cabin.SeatRowCount,attribute,uint8, total number of seat rows
+Vehicle.Cabin.Sunroof.Position,sensor,int8, sunroof current position
+Vehicle.Cabin.Sunroof.Shade.Position,actuator,uint8, sunroof shade position
+Vehicle.Cabin.Sunroof.Shade.Switch,actuator,string, sunroof shade switch state
+Vehicle.Cabin.Sunroof.Switch,actuator,string, sunroof switch state
+Vehicle.CargoVolume,attribute,float, vehicle cargo volume
+Vehicle.Chassis.Accelerator.PedalPosition,sensor,uint8, accelerator pedal position
+Vehicle.Chassis.Axle.Row1.AxleWidth,attribute,uint16, row 1 axle width
+Vehicle.Chassis.Axle.Row1.SteeringAngle,sensor,float, row 1 steering angle
+Vehicle.Chassis.Axle.Row1.TireAspectRatio,attribute,uint8, row 1 tire aspect ratio
+Vehicle.Chassis.Axle.Row1.TireDiameter,attribute,float, row 1 tire diameter
+Vehicle.Chassis.Axle.Row1.TireWidth,attribute,uint16, row 1 tire width
+Vehicle.Chassis.Axle.Row1.TrackWidth,attribute,uint16, row 1 track width
+Vehicle.Chassis.Axle.Row1.TreadWidth,attribute,uint16, row 1 tread width
+Vehicle.Chassis.Axle.Row1.Wheel.Left.Brake.FluidLevel,sensor,uint8, left wheel brake fluid level row 1
+Vehicle.Chassis.Axle.Row1.Wheel.Left.Brake.IsBrakesWorn,sensor,boolean, left wheel brakes worn indicator row 1
+Vehicle.Chassis.Axle.Row1.Wheel.Left.Brake.IsFluidLevelLow,sensor,boolean, left wheel brake fluid low indicator row 1
+Vehicle.Chassis.Axle.Row1.Wheel.Left.Brake.PadWear,sensor,uint8, left wheel brake pad wear row 1
+Vehicle.Chassis.Axle.Row1.Wheel.Left.Speed,sensor,float, left wheel speed row 1
+Vehicle.Chassis.Axle.Row1.Wheel.Left.Tire.IsPressureLow,sensor,boolean, left tire pressure low indicator row 1
+Vehicle.Chassis.Axle.Row1.Wheel.Left.Tire.Pressure,sensor,uint16, left tire pressure row 1
+Vehicle.Chassis.Axle.Row1.Wheel.Left.Tire.Temperature,sensor,float, left tire temperature row 1
+Vehicle.Chassis.Axle.Row1.Wheel.Right.Brake.FluidLevel,sensor,uint8, right wheel brake fluid level row 1
+Vehicle.Chassis.Axle.Row1.Wheel.Right.Brake.IsBrakesWorn,sensor,boolean, right wheel brakes worn indicator row 1
+Vehicle.Chassis.Axle.Row1.Wheel.Right.Brake.IsFluidLevelLow,sensor,boolean, right wheel brake fluid low indicator row 1
+Vehicle.Chassis.Axle.Row1.Wheel.Right.Brake.PadWear,sensor,uint8, right wheel brake pad wear row 1
+Vehicle.Chassis.Axle.Row1.Wheel.Right.Speed,sensor,float, right wheel speed row 1
+Vehicle.Chassis.Axle.Row1.Wheel.Right.Tire.IsPressureLow,sensor,boolean, right tire pressure low indicator row 1
+Vehicle.Chassis.Axle.Row1.Wheel.Right.Tire.Pressure,sensor,uint16, right tire pressure row 1
+Vehicle.Chassis.Axle.Row1.Wheel.Right.Tire.Temperature,sensor,float, right tire temperature row 1
+Vehicle.Chassis.Axle.Row1.WheelCount,attribute,uint8, wheel count row 1
+Vehicle.Chassis.Axle.Row1.WheelDiameter,attribute,float, wheel diameter row 1
+Vehicle.Chassis.Axle.Row1.WheelWidth,attribute,float, wheel width row 1
+Vehicle.Chassis.Axle.Row2.AxleWidth,attribute,uint16, row 2 axle width
+Vehicle.Chassis.Axle.Row2.SteeringAngle,sensor,float, row 2 steering angle
+Vehicle.Chassis.Axle.Row2.TireAspectRatio,attribute,uint8, row 2 tire aspect ratio
+Vehicle.Chassis.Axle.Row2.TireDiameter,attribute,float, row 2 tire diameter
+Vehicle.Chassis.Axle.Row2.TireWidth,attribute,uint16, row 2 tire width
+Vehicle.Chassis.Axle.Row2.TrackWidth,attribute,uint16, row 2 track width
+Vehicle.Chassis.Axle.Row2.TreadWidth,attribute,uint16, row 2 tread width
+Vehicle.Chassis.Axle.Row2.Wheel.Left.Brake.FluidLevel,sensor,uint8, left wheel brake fluid level row 2
+Vehicle.Chassis.Axle.Row2.Wheel.Left.Brake.IsBrakesWorn,sensor,boolean, left wheel brakes worn indicator row 2
+Vehicle.Chassis.Axle.Row2.Wheel.Left.Brake.IsFluidLevelLow,sensor,boolean, left wheel brake fluid low indicator row 2
+Vehicle.Chassis.Axle.Row2.Wheel.Left.Brake.PadWear,sensor,uint8, left wheel brake pad wear row 2
+Vehicle.Chassis.Axle.Row2.Wheel.Left.Speed,sensor,float, left wheel speed row 2
+Vehicle.Chassis.Axle.Row2.Wheel.Left.Tire.IsPressureLow,sensor,boolean, left tire pressure low indicator row 2
+Vehicle.Chassis.Axle.Row2.Wheel.Left.Tire.Pressure,sensor,uint16, left tire pressure row 2
+Vehicle.Chassis.Axle.Row2.Wheel.Left.Tire.Temperature,sensor,float, left tire temperature row 2
+Vehicle.Chassis.Axle.Row2.Wheel.Right.Brake.FluidLevel,sensor,uint8, right wheel brake fluid level row 2
+Vehicle.Chassis.Axle.Row2.Wheel.Right.Brake.IsBrakesWorn,sensor,boolean, right wheel brakes worn indicator row 2
+Vehicle.Chassis.Axle.Row2.Wheel.Right.Brake.IsFluidLevelLow,sensor,boolean, right wheel brake fluid low indicator row 2
+Vehicle.Chassis.Axle.Row2.Wheel.Right.Brake.PadWear,sensor,uint8, right wheel brake pad wear row 2
+Vehicle.Chassis.Axle.Row2.Wheel.Right.Speed,sensor,float, right wheel speed row 2
+Vehicle.Chassis.Axle.Row2.Wheel.Right.Tire.IsPressureLow,sensor,boolean, right tire pressure low indicator row 2
+Vehicle.Chassis.Axle.Row2.Wheel.Right.Tire.Pressure,sensor,uint16, right tire pressure row 2
+Vehicle.Chassis.Axle.Row2.Wheel.Right.Tire.Temperature,sensor,float, right tire temperature row 2
+Vehicle.Chassis.Axle.Row2.WheelCount,attribute,uint8, wheel count row 2
+Vehicle.Chassis.Axle.Row2.WheelDiameter,attribute,float, wheel diameter row 2
+Vehicle.Chassis.Axle.Row2.WheelWidth,attribute,float, wheel width row 2
+Vehicle.Chassis.AxleCount,attribute,uint8, total number of axles
+Vehicle.Chassis.Brake.IsDriverEmergencyBrakingDetected,sensor,boolean, driver emergency braking detected
+Vehicle.Chassis.Brake.PedalPosition,sensor,uint8, brake pedal position
+Vehicle.Chassis.ParkingBrake.IsAutoApplyEnabled,actuator,boolean, parking brake auto-apply enabled
+Vehicle.Chassis.ParkingBrake.IsEngaged,actuator,boolean, parking brake engaged
+Vehicle.Chassis.SteeringWheel.Angle,sensor,int16, steering wheel angle
+Vehicle.Chassis.SteeringWheel.Extension,actuator,uint8, steering wheel extension
+Vehicle.Chassis.SteeringWheel.Tilt,actuator,uint8, steering wheel tilt
+Vehicle.Chassis.Wheelbase,attribute,uint16, vehicle wheelbase
+Vehicle.Connectivity.IsConnectivityAvailable,sensor,boolean, connectivity available
+Vehicle.CurbWeight,attribute,uint16, vehicle curb weight
+Vehicle.CurrentLocation.Altitude,sensor,double, current altitude
+Vehicle.CurrentLocation.GNSSReceiver.FixType,sensor,string, GNSS receiver fix type
+Vehicle.CurrentLocation.GNSSReceiver.MountingPosition.X,attribute,int16, GNSS receiver mounting X position
+Vehicle.CurrentLocation.GNSSReceiver.MountingPosition.Y,attribute,int16, GNSS receiver mounting Y position
+Vehicle.CurrentLocation.GNSSReceiver.MountingPosition.Z,attribute,int16, GNSS receiver mounting Z position
+Vehicle.CurrentLocation.Heading,sensor,double, current heading
+Vehicle.CurrentLocation.HorizontalAccuracy,sensor,double, horizontal accuracy
+Vehicle.CurrentLocation.Latitude,sensor,double, current latitude
+Vehicle.CurrentLocation.Longitude,sensor,double, current longitude
+
+Vehicle.CurrentLocation.Timestamp,sensor,string, current location timestamp
+Vehicle.CurrentLocation.VerticalAccuracy,sensor,double, vertical accuracy
+Vehicle.CurrentOverallWeight,sensor,uint16, current overall vehicle weight
+Vehicle.Driver.AttentiveProbability,sensor,float, probability driver is attentive
+Vehicle.Driver.DistractionLevel,sensor,float, driver distraction level
+Vehicle.Driver.FatigueLevel,sensor,float, driver fatigue level
+Vehicle.Driver.HeartRate,sensor,uint16, driver heart rate
+Vehicle.Driver.Identifier.Issuer,sensor,string, driver identifier issuer
+Vehicle.Driver.Identifier.Subject,sensor,string, driver identifier subject
+Vehicle.Driver.IsEyesOnRoad,sensor,boolean, driver eyes on road
+Vehicle.Driver.IsHandsOnWheel,sensor,boolean, driver hands on wheel
+Vehicle.EmissionsCO2,attribute,int16, CO2 emissions
+Vehicle.Exterior.AirTemperature,sensor,float, exterior air temperature
+Vehicle.Exterior.Humidity,sensor,float, exterior humidity
+Vehicle.Exterior.LightIntensity,sensor,float, exterior light intensity
+Vehicle.GrossWeight,attribute,uint16, gross vehicle weight
+Vehicle.Height,attribute,uint16, vehicle height
+Vehicle.IsBrokenDown,sensor,boolean, vehicle breakdown state
+Vehicle.IsMoving,sensor,boolean, vehicle moving state
+Vehicle.Length,attribute,uint16, vehicle length
+Vehicle.LowVoltageBattery.CurrentCurrent,sensor,float, low voltage battery current
+Vehicle.LowVoltageBattery.CurrentVoltage,sensor,float, low voltage battery voltage
+Vehicle.LowVoltageBattery.NominalCapacity,attribute,uint16, low voltage battery nominal capacity
+Vehicle.LowVoltageBattery.NominalVoltage,attribute,uint16, low voltage battery nominal voltage
+Vehicle.LowVoltageSystemState,sensor,string, low voltage system state
+Vehicle.MaxTowBallWeight,attribute,uint16, maximum tow ball weight
+Vehicle.MaxTowWeight,attribute,uint16, maximum tow weight
+Vehicle.OBD.AbsoluteLoad,sensor,float, OBD absolute load
+Vehicle.OBD.AcceleratorPositionD,sensor,float, OBD accelerator position D
+Vehicle.OBD.AcceleratorPositionE,sensor,float, OBD accelerator position E
+Vehicle.OBD.AcceleratorPositionF,sensor,float, OBD accelerator position F
+Vehicle.OBD.AirStatus,sensor,string, OBD air status
+Vehicle.OBD.AmbientAirTemperature,sensor,float, OBD ambient air temperature
+Vehicle.OBD.BarometricPressure,sensor,float, OBD barometric pressure
+Vehicle.OBD.Catalyst.Bank1.Temperature1,sensor,float, OBD catalyst bank 1 temperature 1
+Vehicle.OBD.Catalyst.Bank1.Temperature2,sensor,float, OBD catalyst bank 1 temperature 2
+Vehicle.OBD.Catalyst.Bank2.Temperature1,sensor,float, OBD catalyst bank 2 temperature 1
+Vehicle.OBD.Catalyst.Bank2.Temperature2,sensor,float, OBD catalyst bank 2 temperature 2
+Vehicle.OBD.CommandedEGR,sensor,float, OBD commanded EGR
+Vehicle.OBD.CommandedEVAP,sensor,float, OBD commanded EVAP
+Vehicle.OBD.CommandedEquivalenceRatio,sensor,float, OBD commanded equivalence ratio
+Vehicle.OBD.ControlModuleVoltage,sensor,float, OBD control module voltage
+Vehicle.OBD.CoolantTemperature,sensor,float, OBD coolant temperature
+Vehicle.OBD.DTCList,sensor,string, OBD diagnostic trouble code list
+Vehicle.OBD.DistanceSinceDTCClear,sensor,float, OBD distance since DTC clear
+Vehicle.OBD.DistanceWithMIL,sensor,float, OBD distance with MIL on
+Vehicle.OBD.DriveCycleStatus.DTCCount,sensor,uint8, OBD drive cycle DTC count
+Vehicle.OBD.DriveCycleStatus.IgnitionType,sensor,string, OBD drive cycle ignition type
+Vehicle.OBD.DriveCycleStatus.IsMILOn,sensor,boolean, OBD MIL on status
+Vehicle.OBD.EGRError,sensor,float, OBD EGR error
+Vehicle.OBD.EVAPVaporPressure,sensor,float, OBD EVAP vapor pressure
+Vehicle.OBD.EVAPVaporPressureAbsolute,sensor,float, OBD EVAP vapor pressure absolute
+Vehicle.OBD.EVAPVaporPressureAlternate,sensor,float, OBD EVAP vapor pressure alternate
+Vehicle.OBD.EngineLoad,sensor,float, OBD engine load
+Vehicle.OBD.EngineSpeed,sensor,float, OBD engine speed
+Vehicle.OBD.EthanolPercent,sensor,float, OBD ethanol percentage
+Vehicle.OBD.FreezeDTC,sensor,string, OBD freeze DTC
+Vehicle.OBD.FuelInjectionTiming,sensor,float, OBD fuel injection timing
+Vehicle.OBD.FuelLevel,sensor,float, OBD fuel level
+Vehicle.OBD.FuelPressure,sensor,float, OBD fuel pressure
+Vehicle.OBD.FuelRailPressureAbsolute,sensor,float, OBD fuel rail pressure absolute
+Vehicle.OBD.FuelRailPressureDirect,sensor,float, OBD fuel rail pressure direct
+Vehicle.OBD.FuelRailPressureVac,sensor,float, OBD fuel rail pressure vacuum
+Vehicle.OBD.FuelRate,sensor,float, OBD fuel rate
+Vehicle.OBD.FuelStatus,sensor,string, OBD fuel status
+Vehicle.OBD.FuelType,attribute,uint8, OBD fuel type
+Vehicle.OBD.HybridBatteryRemaining,sensor,float, OBD hybrid battery remaining
+Vehicle.OBD.IntakeTemp,sensor,float, OBD intake temperature
+Vehicle.OBD.IsPTOActive,sensor,boolean, OBD PTO active status
+Vehicle.OBD.LongTermFuelTrim1,sensor,float, OBD long-term fuel trim 1
+Vehicle.OBD.LongTermFuelTrim2,sensor,float, OBD long-term fuel trim 2
+Vehicle.OBD.LongTermO2Trim1,sensor,float, OBD long-term O2 trim 1
+Vehicle.OBD.LongTermO2Trim2,sensor,float, OBD long-term O2 trim 2
+Vehicle.OBD.LongTermO2Trim3,sensor,float, OBD long-term O2 trim 3
+Vehicle.OBD.LongTermO2Trim4,sensor,float, OBD long-term O2 trim 4
+Vehicle.OBD.MAF,sensor,float, OBD mass air flow
+Vehicle.OBD.MAP,sensor,float, OBD manifold absolute pressure
+Vehicle.OBD.MaxMAF,sensor,float, OBD maximum mass air flow
+Vehicle.OBD.O2.Sensor1.ShortTermFuelTrim,sensor,float, OBD O2 sensor 1 short-term fuel trim
+Vehicle.OBD.O2.Sensor1.Voltage,sensor,float, OBD O2 sensor 1 voltage
+Vehicle.OBD.O2.Sensor2.ShortTermFuelTrim,sensor,float, OBD O2 sensor 2 short-term fuel trim
+Vehicle.OBD.O2.Sensor2.Voltage,sensor,float, OBD O2 sensor 2 voltage
+Vehicle.OBD.O2.Sensor3.ShortTermFuelTrim,sensor,float, OBD O2 sensor 3 short-term fuel trim
+Vehicle.OBD.O2.Sensor3.Voltage,sensor,float, OBD O2 sensor 3 voltage
+Vehicle.OBD.O2.Sensor4.ShortTermFuelTrim,sensor,float, OBD O2 sensor 4 short-term fuel trim
+Vehicle.OBD.O2.Sensor4.Voltage,sensor,float, OBD O2 sensor 4 voltage
+Vehicle.OBD.O2.Sensor5.ShortTermFuelTrim,sensor,float, OBD O2 sensor 5 short-term fuel trim
+Vehicle.OBD.O2.Sensor5.Voltage,sensor,float, OBD O2 sensor 5 voltage
+Vehicle.OBD.O2.Sensor6.ShortTermFuelTrim,sensor,float, OBD O2 sensor 6 short-term fuel trim
+Vehicle.OBD.O2.Sensor6.Voltage,sensor,float, OBD O2 sensor 6 voltage
+Vehicle.OBD.O2.Sensor7.ShortTermFuelTrim,sensor,float, OBD O2 sensor 7 short-term fuel trim
+Vehicle.OBD.O2.Sensor7.Voltage,sensor,float, OBD O2 sensor 7 voltage
+Vehicle.OBD.O2.Sensor8.ShortTermFuelTrim,sensor,float, OBD O2 sensor 8 short-term fuel trim
+Vehicle.OBD.O2.Sensor8.Voltage,sensor,float, OBD O2 sensor 8 voltage
+Vehicle.OBD.O2WR.Sensor1.Current,sensor,float, OBD O2 wideband sensor 1 current
+Vehicle.OBD.O2WR.Sensor1.Lambda,sensor,float, OBD O2 wideband sensor 1 lambda
+Vehicle.OBD.O2WR.Sensor1.Voltage,sensor,float, OBD O2 wideband sensor 1 voltage
+Vehicle.OBD.O2WR.Sensor2.Current,sensor,float, OBD O2 wideband sensor 2 current
+Vehicle.OBD.O2WR.Sensor2.Lambda,sensor,float, OBD O2 wideband sensor 2 lambda
+
+
+
+Vehicle.OBD.O2WR.Sensor2.Voltage,sensor,float, OBD O2 wideband sensor 2 voltage
+Vehicle.OBD.O2WR.Sensor3.Current,sensor,float, OBD O2 wideband sensor 3 current
+Vehicle.OBD.O2WR.Sensor3.Lambda,sensor,float, OBD O2 wideband sensor 3 lambda
+Vehicle.OBD.O2WR.Sensor3.Voltage,sensor,float, OBD O2 wideband sensor 3 voltage
+Vehicle.OBD.O2WR.Sensor4.Current,sensor,float, OBD O2 wideband sensor 4 current
+Vehicle.OBD.O2WR.Sensor4.Lambda,sensor,float, OBD O2 wideband sensor 4 lambda
+Vehicle.OBD.O2WR.Sensor4.Voltage,sensor,float, OBD O2 wideband sensor 4 voltage
+Vehicle.OBD.O2WR.Sensor5.Current,sensor,float, OBD O2 wideband sensor 5 current
+Vehicle.OBD.O2WR.Sensor5.Lambda,sensor,float, OBD O2 wideband sensor 5 lambda
+Vehicle.OBD.O2WR.Sensor5.Voltage,sensor,float, OBD O2 wideband sensor 5 voltage
+Vehicle.OBD.O2WR.Sensor6.Current,sensor,float, OBD O2 wideband sensor 6 current
+Vehicle.OBD.O2WR.Sensor6.Lambda,sensor,float, OBD O2 wideband sensor 6 lambda
+Vehicle.OBD.O2WR.Sensor6.Voltage,sensor,float, OBD O2 wideband sensor 6 voltage
+Vehicle.OBD.O2WR.Sensor7.Current,sensor,float, OBD O2 wideband sensor 7 current
+Vehicle.OBD.O2WR.Sensor7.Lambda,sensor,float, OBD O2 wideband sensor 7 lambda
+Vehicle.OBD.O2WR.Sensor7.Voltage,sensor,float, OBD O2 wideband sensor 7 voltage
+Vehicle.OBD.O2WR.Sensor8.Current,sensor,float, OBD O2 wideband sensor 8 current
+Vehicle.OBD.O2WR.Sensor8.Lambda,sensor,float, OBD O2 wideband sensor 8 lambda
+Vehicle.OBD.O2WR.Sensor8.Voltage,sensor,float, OBD O2 wideband sensor 8 voltage
+Vehicle.OBD.OBDStandards,attribute,uint8, OBD compliance standards
+Vehicle.OBD.OilTemperature,sensor,float, OBD engine oil temperature
+Vehicle.OBD.OxygenSensorsIn2Banks,sensor,uint8, number of oxygen sensors in 2 banks
+Vehicle.OBD.OxygenSensorsIn4Banks,sensor,uint8, number of oxygen sensors in 4 banks
+Vehicle.OBD.PidsA,attribute,string, OBD supported PIDs group A
+Vehicle.OBD.PidsB,attribute,string, OBD supported PIDs group B
+Vehicle.OBD.PidsC,attribute,string, OBD supported PIDs group C
+Vehicle.OBD.RelativeAcceleratorPosition,sensor,float, OBD relative accelerator position
+Vehicle.OBD.RelativeThrottlePosition,sensor,float, OBD relative throttle position
+Vehicle.OBD.RunTime,sensor,float, OBD engine runtime
+Vehicle.OBD.RunTimeMIL,sensor,float, OBD runtime with MIL on
+Vehicle.OBD.ShortTermFuelTrim1,sensor,float, OBD short-term fuel trim 1
+Vehicle.OBD.ShortTermFuelTrim2,sensor,float, OBD short-term fuel trim 2
+Vehicle.OBD.ShortTermO2Trim1,sensor,float, OBD short-term O2 trim 1
+Vehicle.OBD.ShortTermO2Trim2,sensor,float, OBD short-term O2 trim 2
+Vehicle.OBD.ShortTermO2Trim3,sensor,float, OBD short-term O2 trim 3
+Vehicle.OBD.ShortTermO2Trim4,sensor,float, OBD short-term O2 trim 4
+Vehicle.OBD.Speed,sensor,float, OBD vehicle speed
+Vehicle.OBD.Status.DTCCount,sensor,uint8, OBD diagnostic trouble code count
+Vehicle.OBD.Status.IgnitionType,attribute,string, OBD ignition type
+Vehicle.OBD.Status.IsMILOn,sensor,boolean, OBD MIL status
+Vehicle.OBD.ThrottleActuator,sensor,float, OBD throttle actuator value
+Vehicle.OBD.ThrottlePosition,sensor,float, OBD throttle position
+Vehicle.OBD.ThrottlePositionB,sensor,float, OBD throttle position B
+Vehicle.OBD.ThrottlePositionC,sensor,float, OBD throttle position C
+Vehicle.OBD.TimeSinceDTCCleared,sensor,float, OBD time since DTC cleared
+Vehicle.OBD.TimingAdvance,sensor,float, OBD ignition timing advance
+Vehicle.OBD.WarmupsSinceDTCClear,sensor,uint8, OBD warm-up cycles since DTC clear
+Vehicle.PowerOptimizeLevel,actuator,uint8, vehicle power optimization level
+Vehicle.Powertrain.AccumulatedBrakingEnergy,sensor,float, accumulated braking energy
+Vehicle.Powertrain.CombustionEngine.AspirationType,attribute,string, engine aspiration type
+Vehicle.Powertrain.CombustionEngine.Bore,attribute,float, engine bore size
+Vehicle.Powertrain.CombustionEngine.CompressionRatio,attribute,string, engine compression ratio
+Vehicle.Powertrain.CombustionEngine.Configuration,attribute,string, engine configuration
+Vehicle.Powertrain.CombustionEngine.DieselExhaustFluid.Capacity,attribute,float, diesel exhaust fluid capacity
+Vehicle.Powertrain.CombustionEngine.DieselExhaustFluid.IsLevelLow,sensor,boolean, diesel exhaust fluid low-level status
+Vehicle.Powertrain.CombustionEngine.DieselExhaustFluid.Level,sensor,uint8, diesel exhaust fluid level
+Vehicle.Powertrain.CombustionEngine.DieselExhaustFluid.Range,sensor,uint32, diesel exhaust fluid range
+Vehicle.Powertrain.CombustionEngine.DieselParticulateFilter.DeltaPressure,sensor,float, diesel particulate filter delta pressure
+Vehicle.Powertrain.CombustionEngine.DieselParticulateFilter.InletTemperature,sensor,float, diesel particulate filter inlet temperature
+Vehicle.Powertrain.CombustionEngine.DieselParticulateFilter.OutletTemperature,sensor,float, diesel particulate filter outlet temperature
+Vehicle.Powertrain.CombustionEngine.Displacement,attribute,uint16, engine displacement
+Vehicle.Powertrain.CombustionEngine.ECT,sensor,int16, engine coolant temperature
+Vehicle.Powertrain.CombustionEngine.EOP,sensor,uint16, engine oil pressure
+Vehicle.Powertrain.CombustionEngine.EOT,sensor,int16, engine oil temperature
+Vehicle.Powertrain.CombustionEngine.EngineCode,attribute,string, engine code
+Vehicle.Powertrain.CombustionEngine.EngineCoolantCapacity,attribute,float, engine coolant capacity
+Vehicle.Powertrain.CombustionEngine.EngineHours,sensor,float, engine hours
+Vehicle.Powertrain.CombustionEngine.EngineOilCapacity,attribute,float, engine oil capacity
+Vehicle.Powertrain.CombustionEngine.EngineOilLevel,sensor,string, engine oil level
+Vehicle.Powertrain.CombustionEngine.IdleHours,sensor,float, engine idle hours
+Vehicle.Powertrain.CombustionEngine.IsRunning,sensor,boolean, engine running status
+Vehicle.Powertrain.CombustionEngine.MAF,sensor,uint16, engine mass air flow
+Vehicle.Powertrain.CombustionEngine.MAP,sensor,uint16, engine manifold absolute pressure
+Vehicle.Powertrain.CombustionEngine.MaxPower,attribute,uint16, engine maximum power
+Vehicle.Powertrain.CombustionEngine.MaxTorque,attribute,uint16, engine maximum torque
+Vehicle.Powertrain.CombustionEngine.NumberOfCylinders,attribute,uint16, number of engine cylinders
+Vehicle.Powertrain.CombustionEngine.NumberOfValvesPerCylinder,attribute,uint16, valves per cylinder
+Vehicle.Powertrain.CombustionEngine.OilLifeRemaining,sensor,int32, remaining engine oil life
+Vehicle.Powertrain.CombustionEngine.Power,sensor,uint16, engine power output
+Vehicle.Powertrain.CombustionEngine.Speed,sensor,uint16, engine speed
+Vehicle.Powertrain.CombustionEngine.StrokeLength,attribute,float, engine stroke length
+Vehicle.Powertrain.CombustionEngine.TPS,sensor,uint8, throttle position sensor
+Vehicle.Powertrain.CombustionEngine.Torque,sensor,uint16, engine torque
+Vehicle.Powertrain.ElectricMotor.CoolantTemperature,sensor,int16, electric motor coolant temperature
+Vehicle.Powertrain.ElectricMotor.EngineCode,attribute,string, electric motor code
+Vehicle.Powertrain.ElectricMotor.MaxPower,attribute,uint16, electric motor maximum power
+Vehicle.Powertrain.ElectricMotor.MaxRegenPower,attribute,uint16, electric motor maximum regenerative power
+Vehicle.Powertrain.ElectricMotor.MaxRegenTorque,attribute,uint16, electric motor maximum regenerative torque
+Vehicle.Powertrain.ElectricMotor.MaxTorque,attribute,uint16, electric motor maximum torque
+Vehicle.Powertrain.ElectricMotor.Power,sensor,int16, electric motor power
+Vehicle.Powertrain.ElectricMotor.Speed,sensor,int32, electric motor speed
+Vehicle.Powertrain.ElectricMotor.Temperature,sensor,int16, electric motor temperature
+Vehicle.Powertrain.ElectricMotor.Torque,sensor,int16, electric motor torque
+Vehicle.Powertrain.FuelSystem.AbsoluteLevel,sensor,float, fuel system absolute level
+Vehicle.Powertrain.FuelSystem.AverageConsumption,sensor,float, average fuel consumption
+Vehicle.Powertrain.FuelSystem.ConsumptionSinceStart,sensor,float, fuel consumption since start
+Vehicle.Powertrain.FuelSystem.HybridType,attribute,string, fuel system hybrid type
+
+
+Vehicle.Powertrain.FuelSystem.InstantConsumption,sensor,float, fuel system instant consumption
+Vehicle.Powertrain.FuelSystem.IsEngineStopStartEnabled,sensor,boolean, engine stop-start enabled status
+Vehicle.Powertrain.FuelSystem.IsFuelLevelLow,sensor,boolean, fuel level low status
+Vehicle.Powertrain.FuelSystem.Range,sensor,uint32, estimated fuel range
+Vehicle.Powertrain.FuelSystem.RelativeLevel,sensor,uint8, relative fuel tank level
+Vehicle.Powertrain.FuelSystem.SupportedFuel,attribute,string, supported fuel types
+Vehicle.Powertrain.FuelSystem.SupportedFuelTypes,attribute,string, supported fuel type list
+Vehicle.Powertrain.FuelSystem.TankCapacity,attribute,float, fuel tank capacity
+Vehicle.Powertrain.PowerOptimizeLevel,actuator,uint8, powertrain optimization level 
+Vehicle.Powertrain.Range,sensor,uint32, estimated driving range
+Vehicle.Powertrain.TractionBattery.AccumulatedChargedEnergy,sensor,float, accumulated traction battery charged energy
+Vehicle.Powertrain.TractionBattery.AccumulatedChargedThroughput,sensor,float, accumulated traction battery charged throughput
+Vehicle.Powertrain.TractionBattery.AccumulatedConsumedEnergy,sensor,float, accumulated traction battery consumed energy
+Vehicle.Powertrain.TractionBattery.AccumulatedConsumedThroughput,sensor,float, accumulated traction battery consumed throughput
+Vehicle.Powertrain.TractionBattery.CellVoltage.Max,sensor,float, maximum traction battery cell voltage
+Vehicle.Powertrain.TractionBattery.CellVoltage.Min,sensor,float, minimum traction battery cell voltage
+Vehicle.Powertrain.TractionBattery.Charging.ChargeCurrent.DC,sensor,float, DC charging current
+Vehicle.Powertrain.TractionBattery.Charging.ChargeCurrent.Phase1,sensor,float, phase 1 charging current
+Vehicle.Powertrain.TractionBattery.Charging.ChargeCurrent.Phase2,sensor,float, phase 2 charging current
+Vehicle.Powertrain.TractionBattery.Charging.ChargeCurrent.Phase3,sensor,float, phase 3 charging current
+Vehicle.Powertrain.TractionBattery.Charging.ChargeLimit,actuator,uint8, maximum charge limit
+Vehicle.Powertrain.TractionBattery.Charging.ChargePlugType,attribute,string, supported charge plug types
+Vehicle.Powertrain.TractionBattery.Charging.ChargePortFlap,actuator,string, charge port flap status
+Vehicle.Powertrain.TractionBattery.Charging.ChargeRate,sensor,float, charging rate
+Vehicle.Powertrain.TractionBattery.Charging.ChargeVoltage.DC,sensor,float, DC charging voltage
+Vehicle.Powertrain.TractionBattery.Charging.ChargeVoltage.Phase1,sensor,float, phase 1 charging voltage
+Vehicle.Powertrain.TractionBattery.Charging.ChargeVoltage.Phase2,sensor,float, phase 2 charging voltage
+Vehicle.Powertrain.TractionBattery.Charging.ChargeVoltage.Phase3,sensor,float, phase 3 charging voltage
+Vehicle.Powertrain.TractionBattery.Charging.IsCharging,sensor,boolean, charging status
+Vehicle.Powertrain.TractionBattery.Charging.IsChargingCableConnected,sensor,boolean, charging cable connected status
+Vehicle.Powertrain.TractionBattery.Charging.IsChargingCableLocked,actuator,boolean, charging cable locked status
+Vehicle.Powertrain.TractionBattery.Charging.IsDischarging,sensor,boolean, discharging status
+Vehicle.Powertrain.TractionBattery.Charging.MaximumChargingCurrent.DC,sensor,float, maximum DC charging current
+Vehicle.Powertrain.TractionBattery.Charging.MaximumChargingCurrent.Phase1,sensor,float, maximum phase 1 charging current
+Vehicle.Powertrain.TractionBattery.Charging.MaximumChargingCurrent.Phase2,sensor,float, maximum phase 2 charging current
+Vehicle.Powertrain.TractionBattery.Charging.MaximumChargingCurrent.Phase3,sensor,float, maximum phase 3 charging current
+Vehicle.Powertrain.TractionBattery.Charging.Mode,actuator,string, charging mode
+Vehicle.Powertrain.TractionBattery.Charging.PowerLoss,sensor,float, charging power loss
+Vehicle.Powertrain.TractionBattery.Charging.StartStopCharging,actuator,string, start/stop charging command
+Vehicle.Powertrain.TractionBattery.Charging.Temperature,sensor,float, traction battery temperature during charging
+Vehicle.Powertrain.TractionBattery.Charging.TimeToComplete,sensor,uint32, estimated charging time remaining
+Vehicle.Powertrain.TractionBattery.Charging.Timer.Mode,actuator,string, charging timer mode
+Vehicle.Powertrain.TractionBattery.Charging.Timer.Time,actuator,string, charging timer set time
+Vehicle.Powertrain.TractionBattery.CurrentCurrent,sensor,float, traction battery current
+Vehicle.Powertrain.TractionBattery.CurrentPower,sensor,float, traction battery power
+Vehicle.Powertrain.TractionBattery.CurrentVoltage,sensor,float, traction battery voltage
+Vehicle.Powertrain.TractionBattery.DCDC.PowerLoss,sensor,float, DC-DC converter power loss
+Vehicle.Powertrain.TractionBattery.DCDC.Temperature,sensor,float, DC-DC converter temperature
+Vehicle.Powertrain.TractionBattery.GrossCapacity,attribute,uint16, gross traction battery capacity
+Vehicle.Powertrain.TractionBattery.Id,attribute,string, traction battery identifier
+Vehicle.Powertrain.TractionBattery.IsGroundConnected,sensor,boolean, traction battery ground connection status
+Vehicle.Powertrain.TractionBattery.IsPowerConnected,sensor,boolean, traction battery power connection status
+Vehicle.Powertrain.TractionBattery.MaxVoltage,attribute,uint16, maximum traction battery voltage
+Vehicle.Powertrain.TractionBattery.NetCapacity,sensor,uint16, net traction battery capacity
+Vehicle.Powertrain.TractionBattery.NominalVoltage,attribute,uint16, nominal traction battery voltage
+Vehicle.Powertrain.TractionBattery.PowerLoss,sensor,float, traction battery power loss
+Vehicle.Powertrain.TractionBattery.ProductionDate,attribute,string, traction battery production date
+Vehicle.Powertrain.TractionBattery.Range,sensor,uint32, estimated range based on traction battery
+Vehicle.Powertrain.TractionBattery.StateOfCharge.Current,sensor,float, current state of charge
+Vehicle.Powertrain.TractionBattery.StateOfCharge.CurrentEnergy,sensor,float, current energy in traction battery
+Vehicle.Powertrain.TractionBattery.StateOfCharge.Displayed,sensor,float, displayed state of charge
+Vehicle.Powertrain.TractionBattery.StateOfHealth,sensor,float, traction battery state of health
+Vehicle.Powertrain.TractionBattery.Temperature.Average,sensor,float, average traction battery temperature
+Vehicle.Powertrain.TractionBattery.Temperature.Max,sensor,float, maximum traction battery temperature
+Vehicle.Powertrain.TractionBattery.Temperature.Min,sensor,float, minimum traction battery temperature
+Vehicle.Powertrain.Transmission.ClutchEngagement,actuator,float, transmission clutch engagement
+Vehicle.Powertrain.Transmission.ClutchWear,sensor,uint8, transmission clutch wear
+Vehicle.Powertrain.Transmission.CurrentGear,sensor,int8, current gear
+Vehicle.Powertrain.Transmission.DiffLockFrontEngagement,actuator,float, front differential lock engagement
+Vehicle.Powertrain.Transmission.DiffLockRearEngagement,actuator,float, rear differential lock engagement
+Vehicle.Powertrain.Transmission.DriveType,attribute,string, transmission drive type
+Vehicle.Powertrain.Transmission.GearChangeMode,actuator,string, gear change mode
+Vehicle.Powertrain.Transmission.GearCount,attribute,int8, number of gears
+Vehicle.Powertrain.Transmission.IsElectricalPowertrainEngaged,actuator,boolean, electrical powertrain engaged status
+Vehicle.Powertrain.Transmission.IsLowRangeEngaged,actuator,boolean, low range engaged status
+Vehicle.Powertrain.Transmission.IsParkLockEngaged,sensor,boolean, park lock engaged status
+Vehicle.Powertrain.Transmission.PerformanceMode,actuator,string, transmission performance mode
+Vehicle.Powertrain.Transmission.SelectedGear,actuator,int8, selected gear
+Vehicle.Powertrain.Transmission.Temperature,sensor,int16, transmission temperature
+Vehicle.Powertrain.Transmission.TorqueDistribution,actuator,float, torque distribution
+Vehicle.Powertrain.Transmission.TravelledDistance,sensor,float, distance travelled
+Vehicle.Powertrain.Transmission.Type,attribute,string, transmission type
+Vehicle.Powertrain.Type,attribute,string, powertrain type
+Vehicle.RoofLoad,attribute,int16, roof load capacity
+Vehicle.Service.DistanceToService,sensor,float, distance to next service
+Vehicle.Service.IsServiceDue,sensor,boolean, service due status
+Vehicle.Service.TimeToService,sensor,int32, time until next service
+Vehicle.Speed,sensor,float, speed
+Vehicle.StartTime,attribute,string, vehicle start time
+Vehicle.Trailer.IsConnected,sensor,boolean, trailer connected status
+Vehicle.TraveledDistance,sensor,float, total travelled distance
+Vehicle.TraveledDistanceSinceStart,sensor,float, travelled distance since start
+Vehicle.TripDuration,sensor,float, trip duration
+Vehicle.TripMeterReading,actuator,float, trip meter reading
+Vehicle.VehicleIdentification.AcrissCode,attribute,string, vehicle ACIRSS code
+Vehicle.VehicleIdentification.BodyType,attribute,string, vehicle body type
+Vehicle.VehicleIdentification.Brand,attribute,string, vehicle brand
+Vehicle.VehicleIdentification.DateVehicleFirstRegistered,attribute,string, first registration date
+Vehicle.VehicleIdentification.KnownVehicleDamages,attribute,string, known vehicle damages
+Vehicle.VehicleIdentification.MeetsEmissionStandard,attribute,string, emission standard compliance
+Vehicle.VehicleIdentification.Model,attribute,string, vehicle model
+Vehicle.VehicleIdentification.OptionalExtras,attribute,string, optional extras list
+Vehicle.VehicleIdentification.ProductionDate,attribute,string, production date
+Vehicle.VehicleIdentification.PurchaseDate,attribute,string, purchase date
+Vehicle.VehicleIdentification.VIN,attribute,string, vehicle VIN
+Vehicle.VehicleIdentification.VehicleConfiguration,attribute,string, vehicle configuration
+Vehicle.VehicleIdentification.VehicleInteriorColor,attribute,string, interior color
+Vehicle.VehicleIdentification.VehicleInteriorType,attribute,string, interior type
+Vehicle.VehicleIdentification.VehicleModelDate,attribute,string, vehicle model year date
+Vehicle.VehicleIdentification.VehicleSeatingCapacity,attribute,uint16, seating capacity
+Vehicle.VehicleIdentification.VehicleSpecialUsage,attribute,string, special usage
+Vehicle.VehicleIdentification.WMI,attribute,string, world manufacturer identifier
+Vehicle.VehicleIdentification.Year,attribute,uint16, model year
+Vehicle.VersionVSS.Label,attribute,string, VSS label
+Vehicle.VersionVSS.Major,attribute,uint32, VSS major version
+Vehicle.VersionVSS.Minor,attribute,uint32, VSS minor version
+Vehicle.VersionVSS.Patch,attribute,uint32, VSS patch version
+Vehicle.Width,attribute,uint16, vehicle width
