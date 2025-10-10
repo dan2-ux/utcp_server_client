@@ -12,7 +12,8 @@ import json
 
 class TestRequest(BaseModel):
     api: str
-    value: Union[bool, int, str]
+    type: str
+    value: Union[bool, int, str, float]
 
 __version__ = "1.0.0"
 BASE_PATH = "http://localhost:8080"
@@ -39,14 +40,52 @@ def get_utcp():
 
 @app.post("/setter")
 async def target_value_setter(tool : TestRequest):
-    try:
-        async with vss as client:
-            success = await client.set_target_values({
-                tool.api: Datapoint(tool.value)
-            })
+    if tool.type == "actuator":
+        try:
+            async with vss as client:
+                success = await client.set_target_values({
+                    tool.api: Datapoint(tool.value)
+                })
             return success
-    except:
-        return f"Failed to set {tool.api} value to {tool.value}"
+        except:
+            return f"Failed to set {tool.api} value to {tool.value}"
+    elif tool.type == "sensor":
+        try:
+            async with vss as client:
+                success = await client.set_current_values({
+                    tool.api: Datapoint(tool.value)
+                })
+            return success
+        except:
+            return f"Failed to set {tool.api} value to {tool.value}"
+    
+
+@utcp_tool(tool_call_template=HttpCallTemplate(
+    name="teller",
+    url=f"{BASE_PATH}/teller",
+    http_method="POST"
+))
+
+@app.post("/teller")
+async def target_value_teller(tool : TestRequest):
+    if tool.type == "actuator":
+        try:
+            async with vss as client:
+                success = await client.get_target_values({
+                    tool.api
+                })
+            return success
+        except:
+            return f"Failed to set {tool.api} value to {tool.value}"
+    elif tool.type == "sensor":
+        try:
+            async with vss as client:
+                success = await client.get_current_values({
+                    tool.api
+                })
+            return success
+        except:
+            return f"Failed to set {tool.api} value to {tool.value}"
 
 
 if __name__ == "__main__":
