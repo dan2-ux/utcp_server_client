@@ -7,26 +7,68 @@ from langchain_core.messages import SystemMessage, HumanMessage
 
 import json
 
-model = ChatOllama(model="gemma2:9b")
-answer_model = ChatOllama(model= "llama3.2:latest")
+model = ChatOllama(model="gemma3:12b")
+answer_model = ChatOllama(model= "gemma2:9b")
 
 from langchain_core.prompts import ChatPromptTemplate
 from fine_vector import retriever
 
+import csv
+
+api_data = []
+with open("data.csv", newline="") as F:
+    reader = csv.DictReader(F)
+    for row in reader:
+        api_data.append(row)
+
+def find_type_using_api(api_path):
+    for entry in api_data:
+        if entry["path"] == api_path:
+            return entry["type"]
+
+import re
+def clean_json_response(s):
+    # Remove code fences like ``` or ```json
+    s = re.sub(r"^```(?:json)?\s*", "", s)
+    s = re.sub(r"\s*```$", "", s)
+    return s.strip()
+
+#template = """
+#    You are an expert in vehicle APIs.
+
+#    Always find the **exact API path** and its **type** ('actuator', 'sensor', or 'attribute') from the vehicle API CSV that matches the user's request.
+#    - Use the 'prefer_name' column to identify the API path first.
+#    - Use the 'type' column from the CSV to fill in the API type.
+#    - If multiple APIs match, choose the most relevant one.
+
+#    Respond ONLY in the following JSON format, without extra words or explanations:
+
+#    {{
+#        "api": "<full API path in dot notation>",
+#        "type": "<API type>"
+#    }}
+
+#    Here are the relevant APIs: {information}
+
+#    Here is the question: {question}
+#"""
+
 template = """
-    You are an exeprt in answering questions about a vehicle.
+    You are an expert in vehicle APIs.
 
-    Always find the correct API path from the vehicle API CSV that matches the user's request.  
-    - Use the 'prefer_name' column to identify the API path first, as it provides the most human-friendly description.  
-    - If multiple APIs match, choose the most relevant one based on the user's request. 
-    
-    If they ask for api then prioritize giving the whole api and you should you "." in api not "/", however answer as straight to the point as posible.
-    
-    Don't output anything extra including ``` and the word json.
+    Always find the **exact API path** from the vehicle API CSV that matches the user's request.
+    - Use the 'prefer_name' column to identify the API path first.
+    - If multiple APIs match, choose the most relevant one.
 
-    Here are some relevant infor: {information}
+    Respond ONLY in the following JSON format, without extra words or explanations:
 
-    Here is the question to answer: {question}
+    {{
+        "api": "<full API path in dot notation>",
+    }}
+
+    Here are the relevant APIs: {information}
+
+    Here is the question: {question}
 """
 
 prompt = ChatPromptTemplate.from_template(template)
@@ -72,40 +114,62 @@ async def main():
         })
 
         # Create conversation context
-        prompt = SystemMessage(
-        content="""
-                You are my AI assistant.
-                You control a vehicle system through VSS APIs.
+        system_prompt = SystemMessage(
+            content="""
+                You are my AI assistant controlling vehicle VSS APIs.
 
-                Very important rules:
-                - The 'api' field must always be in VSS dot notation, like: "Vehicle.Body.Lights.Beam.Low.IsOn".
-                - NEVER return URLs like "https://vehicles.com/...".
-                - Do not add extra words, comments, or symbols.
-                - Respond ONLY with valid JSON in this format:
+                Rules:
+                1. Use the API exactly as provided.
+                2. Use the "type" exactly as provided by the retrieved information — do NOT change it. The "type" is between 3 str "actuator", "sensor" and "attribute". Do not choose anything other then 3 of those.
+                3. Respond ONLY in the following JSON format:
 
-                    {"body": {"api": "Vehicle.Body.Lights.Beam.Low.IsOn", "value": true}}
+                [
+                    {"body": {"api": "<api>", "type": "<type>", "value": <true/false/number>}},
+                    {"tool": "<setter/teller>"}
+                ]
 
-                The "value" must be:
-                - true when the user wants to turn something ON
-                - false when the user wants to turn something OFF
-                - or a number when the user wants to set a numeric value.
+                - Determine "value" based on the user request:
+                * true to turn ON
+                * false to turn OFF
+                * a number if user wants a numeric value
 
-                Do not include ``` or explanations.
+                - Determine "tool":
+                * "setter" if user wants to change a value
+                * "teller" if user wants to read a value (value should be false)
+
+                Do NOT guess or change the "type". Always use the type from the retrieved API information.
+                Do NOT add extra text, explanations, or markdown.
             """
         )
 
+        response = clean_json_response(response.content)
 
-        messages = [f"Detect api based on this information: {response.content}" , prompt, HumanMessage(content=user_input[-1])]
+        print("response", response)
+        response_json = json.loads(response)  # Convert string to dict
+        api_path = response_json["api"]
         
-        print("response", response.content)
+        print(find_type_using_api(api_path))
+        messages = [
+            SystemMessage(content=f"Detected API: {response}, type from CSV: {find_type_using_api(api_path)}. Use this type exactly in your response JSON."),
+            system_prompt,
+            HumanMessage(content=user_input[-1])
+        ]
         # Get model response
+
         result = answer_model.invoke(messages)
-        print("AI:", result.content)
+        result = clean_json_response(result.content)
+        result_json = json.loads(result)
+        result_json[0]["body"]["type"] = find_type_using_api(api_path)
+        print("AI:", result_json)
 
         # Check if model requested tool call
         if tools:
-            tool_to_call = tools[0].name
-            args = json.loads(result.content)
+            if result_json[1]["tool"] == "setter":
+                tool_to_call = tools[0].name
+                args = result_json[0]
+            elif result_json[1]["tool"] == "teller":
+                tool_to_call = tools[1].name
+                args = result_json[0]
 
             result = await client.call_tool(tool_to_call, args)
             print(f"\n{tool_to_call}")
