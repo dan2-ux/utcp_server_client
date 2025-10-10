@@ -8,7 +8,7 @@ from langchain_core.messages import SystemMessage, HumanMessage
 import json
 
 model = ChatOllama(model="gemma3:12b")
-answer_model = ChatOllama(model= "gemma3n:e4b")
+answer_model = ChatOllama(model= "mistral:v0.1")
 
 from langchain_core.prompts import ChatPromptTemplate
 from fine_vector import retriever
@@ -32,26 +32,6 @@ def clean_json_response(s):
     s = re.sub(r"^```(?:json)?\s*", "", s)
     s = re.sub(r"\s*```$", "", s)
     return s.strip()
-
-#template = """
-#    You are an expert in vehicle APIs.
-
-#    Always find the **exact API path** and its **type** ('actuator', 'sensor', or 'attribute') from the vehicle API CSV that matches the user's request.
-#    - Use the 'prefer_name' column to identify the API path first.
-#    - Use the 'type' column from the CSV to fill in the API type.
-#    - If multiple APIs match, choose the most relevant one.
-
-#    Respond ONLY in the following JSON format, without extra words or explanations:
-
-#    {{
-#        "api": "<full API path in dot notation>",
-#        "type": "<API type>"
-#    }}
-
-#    Here are the relevant APIs: {information}
-
-#    Here is the question: {question}
-#"""
 
 template = """
     You are an expert in vehicle APIs.
@@ -132,6 +112,7 @@ async def main():
                 * true to turn ON
                 * false to turn OFF
                 * a number if user wants a numeric value
+                * If user just want to know the status or current value of vehicle data, then the value will be 0.
 
                 - Determine "tool":
                 * "setter" if user wants to change a value
@@ -164,12 +145,20 @@ async def main():
 
         # Check if model requested tool call
         if tools:
-            if result_json[1]["tool"] == "setter":
-                tool_to_call = tools[0].name
-                args = result_json[0]
-            elif result_json[1]["tool"] == "teller":
-                tool_to_call = tools[1].name
-                args = result_json[0]
+            if len(result_json) == 2:
+                if result_json[1]["tool"] == "setter":
+                    tool_to_call = tools[0].name
+                    args = result_json[0]
+                elif result_json[1]["tool"] == "teller":
+                    tool_to_call = tools[1].name
+                    args = result_json[0]
+            elif len(result_json) == 1:
+                if result_json[0]["tool"] == "setter":
+                    tool_to_call = tools[0].name
+                    args = result_json[0]
+                elif result_json[0]["tool"] == "teller":
+                    tool_to_call = tools[0].name
+                    args = result_json[0]
 
             result = await client.call_tool(tool_to_call, args)
             print(f"\n{tool_to_call}")
